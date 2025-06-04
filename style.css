@@ -90,22 +90,3 @@ td {
     display: block;
     margin: 0 auto;
 }
-/*
-table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before,
-table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
-    top: 50%;
-    left: 5px;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    line-height: 1em;
-    font-size: 1em;
-}
-
-@media (min-width: 768px) {
-    table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before,
-    table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
-        border: 1px solid red;
-        /*display: none !important;*/
-    }
-}*/
