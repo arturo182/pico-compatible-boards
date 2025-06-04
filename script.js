@@ -78,8 +78,8 @@ $(document).ready(function()
             }
         ],
         columnDefs: [
-            { targets: 3, render: (data, type, row) => type === 'sort' ? row.flash_bytes : data },
-            { targets: 4, render: (data, type, row) => type === 'sort' ? row.ram_bytes : data }
+            { targets: 3, render: (data, type, row) => type === 'sort' ? row.flash_bytes : data, type: 'num' },
+            { targets: 4, render: (data, type, row) => type === 'sort' ? row.ram_bytes : data, type: 'num' }
         ],
         order: [[ 1, 'asc' ]],
         searching: true,
