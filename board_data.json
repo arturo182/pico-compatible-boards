@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "name": "Raspberry Pi Pico",
+      "chip": "RP2040",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "micro",
+      "smd": true,
+      "image": "https://www.mouser.se/images/marketingid/2022/img/127818871.png",
+      "url": "https://www.raspberrypi.com/products/raspberry-pi-pico/",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "connectivity": [],
+      "notes": ""
+    },
+    {
+      "name": "Pimoroni Pico Plus 2 W",
+      "chip": "RP2350",
+      "flash": "16 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "connectivity": [
+        "wifi",
+        "ble"
+      ],
+      "smd": false,
+      "image": "https://shop.pimoroni.com/cdn/shop/files/pico-plus-2-w-2_768x768_crop_center.jpg",
+      "url": "https://shop.pimoroni.com/products/pimoroni-pico-plus-2-w",
+      "notes": "8MB of PSRAM",
+      "flash_bytes": 16777216,
+      "ram_bytes": 532480
+    },
+    {
+      "name": "Waveshare ESP32-C6-Pico",
+      "chip": "ESP32-C6",
+      "flash": "4 MB",
+      "ram": "512 KB",
+      "usb": "type-c",
+      "connectivity": [
+        "wifi",
+        "ble"
+      ],
+      "smd": true,
+      "image": "https://www.waveshare.com/img/devkit/ESP32-C6-Pico/ESP32-C6-Pico-details-1.jpg",
+      "url": "https://www.waveshare.com/esp32-c6-pico.htm",
+      "flash_bytes": 4194304,
+      "ram_bytes": 524288,
+      "notes": ""
+    }
+  ]
+}
