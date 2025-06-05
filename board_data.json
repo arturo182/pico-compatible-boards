@@ -1,55 +1,1026 @@
 {
   "data": [
     {
-      "name": "Raspberry Pi Pico",
+      "name": "Banana Pi BPI-Pico-RP2040",
       "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
       "flash": "2 MB",
       "ram": "264 KB",
-      "usb": "micro",
+      "usb": "type-c",
+      "dimensions": "21x56",
+      "connectivity": [],
+      "connectors": [
+        "Qwiic"
+      ],
+      "notes": "",
       "smd": true,
-      "image": "https://shop.pimoroni.com/cdn/shop/products/PICOBOARDWHITEANGLE2.jpg",
-      "url": "https://www.raspberrypi.com/products/raspberry-pi-pico/",
+      "image": "https://docs.banana-pi.org/bpi-picow-s3/banana_pi_bpi-pico-rp2040_4.jpg",
+      "url": "https://docs.banana-pi.org/en/BPI-Pico-2040/BananaPi_BPI-Pico-2040",
       "flash_bytes": 2097152,
       "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAwAEADASIAAhEBAxEB/8QAHAABAAICAwEAAAAAAAAAAAAABgAIBAcBAgMF/8QANBAAAgECBAMECgICAwAAAAAAAQIDBBEABQYhEhMxByJBUQgUJDJCUnGBkaEjUxVhF6LB/8QAFwEBAQEBAAAAAAAAAAAAAAAAAQIAA//EAB8RAAICAgMBAQEAAAAAAAAAAAABAlESMRETIWFBcf/aAAwDAQACEQMRAD8AuXiY+NqfVGR6abL1zquFKcxqfVaUctn5kvAz8PdBt3VY7+WD3/LmgfVhUDOzyjGJA3q0vumA1APu/wBYJ/XXEucV42Ki3pDrEwDn7XdBQiUvnLWiEha1LIfcWNm+HymT8/6x2k7WtDpUNA2aS8ayGI+zSbMKgU58P7CB9N8HbCxwlQ6xMAIO2DQszRCPM5jzWjVfZXtd2kVb7bbxP+vPHmvbLoRqdZ1zGco0QlHs7e6aczj/AKA/fbG7IWbCVGw8TGvKztj0RTRzu9ZVNyVkZgtOSTwLGxsPHaVbee/lhxlVfFmNMZo45YmVyjxyqAyMOoNiR+DilJPQNNbNaekpo+p1fp7IYqOLL55cvzmKsaCukkSGeNUcPGxQFhxBvD/eKTZ5k2pY9UV2V0lHRxPHUVIjpKQcxYhGx/jQsCxADAKTva17Yu76SWrp9HaUyirpjl6S1ucwURmruZyYEdXLStwd4hQt7Dwvik+aasqodZZjmhNJmEwrqkJUUkbCCVXO0iBwTwnhuAfA74mPbnKvz+i8MVYcyuozBnaTm2KfxcBiUsem36H4xnI8amWTMIYzN6vLeaZer93gHD7qkb2PjfGFUzla91pBKackGIkkcBtc7kdLsTjiSomlpqiGenqDI4UIzAkqQwvfYfS3njv6zn4ZsS0j0k4jgVpDyOWTH073e3AsLi3/AJfGxM3yjRtTR0tVpqColnpwajMeBW5cSqoJ4br3kuRctY7iw3IAKKYRU1HJTmWWYqiSx8iS0Nhw362Ymx2Ft/pjKoa6rp3rIaSSq5NVGIOYFkTijK78QudiBe2+w8sTi36mPNi2gXTddp2ikzSCtXlFmUUkkMRZSbFSTGS52JuT0NvDe2voyf48dklAmWJUrTpUVABqZFeRjzCSSQAPHyxUegzfLaHKnpcyyGurl5zBjT1XJVUFmBsUO+977bfXe3vo4Rxw9l9LFHk9bk7LUz8dHWMzSxkuTuSqncEEbdDiXzz8K5XH0Xas0rkeqY6CPO6M1S5fWLW0w5jJwyqCAe6RfZjsdsHYuyHs/jgSFci7iIqAGpl6LE8Q+L5HYfvDzExLhGW0ZNrQEbsi7PmjdGyBSrqyn2iXo0aRn4vljX8X8ce0nZXoKSVpX0/EXd2djzpNy0iyn4vnRT9rdDhriYOuFIc5WDYey7QcTq0enYAVZXX+WTYrI0g+L5nY/e3QDHMXZfoKKNY005ThVVUAMkh2WNox8XyOw+9+uGOJjdcaNk7CEvZloWWKSOTTlMySI6OON91aNY2HveKoo+1+t8Jcry+ly2lFNSIyx3LEvI0jMfMsxJJ6dTjKxMUkloG2z//Z"
+    },
+    {
+      "name": "Banana Pi BPI-PicoW-S3",
+      "chip": "ESP32-S3",
+      "cores": "2x Xtensa LX7",
+      "flash": "8 MB",
+      "ram": "512 KB",
+      "usb": "micro",
+      "dimensions": "21x52",
+      "connectivity": [
+        "WiFi",
+        "BLE"
+      ],
+      "connectors": [],
+      "smd": true,
+      "notes": "2 MB of PSRAM",
+      "image": "https://docs.banana-pi.org/picture/bpi_picow_s3_pic.jpg",
+      "url": "https://docs.banana-pi.org/en/BPI-PicoW-S3/BananaPi_BPI-PicoW-S3",
+      "flash_bytes": 8388608,
+      "ram_bytes": 524288,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAwAEADASIAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAAAAcECAMFBgEC/8QAKhAAAgEEAQQCAQQDAQAAAAAAAQIDAAQFERIGByExE0EiFDJRYSMkM1P/xAAXAQADAQAAAAAAAAAAAAAAAAABAgMA/8QAIxEBAAICAAUFAQAAAAAAAAAAAQACESEDEjFR0SJBQmHwkf/aAAwDAQACEQMRAD8AuXRRRWmhRRWsz+exeDtWnyN3HFoAhSwBOzoe/QJIHI6GyNmgoGWabOtHc9W9PW+btsPLlLdby5bhEhcfkx3oA/e9EDX2Ne/FJfqzutkuq8snT3TM1vjbW4Yxte3fJU160NDbMQ2uI0QygqxFKrM5HJYHqS5EseN6hu7O4/UjJ8BIZ02pZQjbCtsBjrypGx7O0LWtbB+/ff8AIyAbl2aKWPbXud071DkbLF2V7FHPcwu4tZZSZUdSdqSfbEaYDZJB341TOpyKwrHcTw28TTXEscUa627sFA2dDyaxZSa5t8bcz2dr+ruI4maKDnx+RgNhd/W/VVJ7mdzOrepbyWwgtprOzLSoyFljmCIWDhlJPx7U8WDbDEArqlvZNBGqD1jm7i94LTEWky4O1mvGjb42uDGREj/SsToKdq6sCQy+GAIqs/VvV+Uy2Ua5zuWaYhybaCIcxIwAHIkjifAXkfsrvjusXU+Yz0uHTGtfEYh2aaKOORisx0Nud+z69gH3WkxdtFfxi0yXFbbfyRM7FWVgfaeD79EfdClPlbbDZxokq3ug8El7Fcu3+wWEVxKT8YcnaxAeWIO1H8BgNgeK6e4hnzNmtrdZye5urWOKGwxyWoLcDtRzfwqAF9Evrfr+6n9I9BZnPXdvHaWUllGATEvxambyRsA/815LxZieSkg61ViOgu1GHwcCvfQRzP5/wjyrbBBMje5GKkBvSkqDx3QeLza4e3v7Q8uN2il7V9qMvkhBfX0h8TRzySlTHD8iftOhpncfmp1oqwB5GrP2kTQ2sULyvMyIFMj/ALnIGtn+z7r7VVVQqgAAaAA8CvaatU2uWIuekKVneToWW8W56mwFok948Hw5XH6/HJW4861/6p7U/fr+KadFUFq5IqCYZQ7AYLJZeabFW8EbWuhLHO04+O0LkhA7jYGzpSD6Y+dU8O1vZhY47e9yRd1UbWW6j/IqdEiOJvCghmVuW/IDLTgxPRnT+MyE17a2WmknedI2O44XfXMovpeRAJ/v1quhqDw7XfW67efErzlTXWQcLibHEWvwWUPDejJIxLSSsABydj5Y6A8mp1FFVADBJrmFFFFGaf/Z"
+    },
+    {
+      "name": "CentyLab PicoPD Pro",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "16 MB",
+      "ram": "264 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
       "connectivity": [],
+      "connectors": [],
+      "smd": true,
+      "notes": "USB-C PD 3.1",
+      "image": "https://lectronz-images.b-cdn.net/lectronz/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTg3ODgsInB1ciI6ImJsb2JfaWQifX0=--2180f0c86208a5e7a27238a5d016397147c0bfcc/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJKUEciLCJyZXNpemVfdG9fbGltaXQiOls5NjAsNjQwXSwic2F2ZXIiOnsic3RyaXAiOnRydWV9fSwicHVyIjoidmFyaWF0aW9uIn19--a1419a086f227676aca33a49760ac51e58b523e3/Front.JPG",
+      "url": "https://lectronz.com/products/picopd-pro-usb-pps-avs-dev-board",
+      "flash_bytes": 16777216,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAwAEADASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAUGAwQHCP/EACsQAAEDAwMDAwQDAQAAAAAAAAECAwQABREGEiEHEzFBUXEIFGFyIjJD4f/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAHREAAgIDAAMAAAAAAAAAAAAAAAECEQMSIRMxQf/aAAwDAQACEQMRAD8A9l0pSgFKUoBSsMyVGhR1yZkhqOygZU46sJSPkmtK0agsl3aZcttziyUvBRb2LGVbTg4HmpaBJ0pSqBSlRuqEXhdgmJsDrDdz7Z+3U8Mo3ex9vnkA+hqN0gZbxdrbZ4apl0nR4cdPlx5YSP8AtcU199Runre3Li6ceiOy22VKYdmFaUPrGAG0BIJ3HORu2jgjzwOE9W16gnygdVaimRrguV2HEymyI0dPAUVKGSNpPIx/UZGfNUiwaPuEu4zGu7ElsJy23LZJdZkYVgbF8ZSeT78eAfHPybKzzSyy6T+v9c611TLauN7vSjbnAe2wHgkoJHjangEZ549KsfS7qNqaHGYhNWlh1UWQhsqcztQAP81A85A884yMA1cOmv0/3W5BE27NIgtuAb3pDWFrSBgBLZ/l4xyop+DnA9EaM6f6Z0qhtUCCl2UgY+5fAU4P14wgfhIFc3B5PhrCpRey4Tun56rpZIdxXDkwlSGkuGPIThxsn0UPet6lK9C9HcUpSqChdTemNm1q+zMd2RpqB21ulruJdb9lIyAoj0J+DkVKaN0FpzS7TZgxA9KQMfcv4U4P19ED9QPzmrTSsKEU7olK7FKUrZRSlKA//9k="
+    },
+    {
+      "name": "Elecrow Pico W5",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "8 MB",
+      "ram": "264 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [
+        "WiFi",
+        "BLE"
+      ],
+      "connectors": [],
+      "smd": true,
       "notes": "",
-      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAHAAAAwADAAMAAAAAAAAAAAAAAAcIAwUGAQQJ/8QALxAAAQIFAwMCBQQDAAAAAAAAAQIDAAQFESEGBxIiMUETFDJRYXGBFiOhsYKRwf/EABoBAAIDAQEAAAAAAAAAAAAAAAQFAAIDBgH/xAAsEQABAgMGBAYDAAAAAAAAAAABAhEAAyEEEjFBUWEFgZHwExQicbHRUsHx/9oADAMBAAIRAxEAPwCy4I9OsVGVpkg7NTUyywhCSQpw4/0Mn8QpKzuVJvAOKq4LS2/Wb9K6AkBVgkpAK+dwrpt4jy8HZ6x44dnhzwRLeut0tVSwk5otVZ99t1CVJpa0qaBWQEqIKbgntYi+bfOHBtTuhStYMoknpiXRVEkpKUKHF1QFyALkgjyD+Lximf6rqg2m/wBbbc2xRaJcxTJPe3x78nYkEEEbxvBBBBEiQpd1dOV+Vn3NQUqoTbrSgQpAussX4iwTnlc/YJhVSU/7rUPGZYTTZYrC5lUq6APUGAoKza+QVdgTm2TFXKAUkpUAQcEHzCi3O25UgmsaeStHp5LLRsprsB6ZOEoAuVCxP/F6pXllmYgOk46jcbajnrC+3WVc0X0GumR27yp+LKDfPQskKpKinVaZl6a/NB5aErC3R0o5lSgbquDi57i/359iSpenUvOacliww0ULDQup14/5HqznJFv4jxqel1+ozki0zWpthaF8m+LfJD6LeAbHx5xa/wBDC61xqytS9WXTPbJkUoCgh4J9QueLi+APwbQUm5NS4qD33pHPI81aZwkSiEpd7rl0tlk4LuACRyaLB2l3ZaqLDNN1K8GZjiAmacWm184cVhNycApFvnDij5zbe6rqtQeEvOpmn3mcNzzaSbWxZZ7A2v2ilNot2lU8t0avLW5KDpbcsVLZ72AGVOXPf5eMYil4yKKqnXT3++upc2fiJRP8raWC8tCMjz0/goWCMcs+zMsIfl3UOtLF0rQq4I+hjJBMOIIIIIkSFhuht03UkO1SjNJTMk83WQeIWrHXyHV0gfCLX/ueNY0CTqzrUtVZFCnUn1EqcHFThx8Qv0EgXse8WtC93P28l9Qy7s5TW2mp5R5ONqw2+SUgrUBlSgAbZt/cBLlKkq8SUHGY/Y3+ekLOIcNFqF5BurGBFOvdDXMgzVT6VLrpoEqkNqbvwYSjijiLXUCMJGRnHy7xmq+lavKSqZxEu84pKUuENpKiEqFwoEdxbv8AcRnn5Kap9QWzNOPyb6BcOOCziMAAOgfADi38iNx+qWHJlCZmQmGp1BCgErSUcuHC6eXwJKM3Tm4BvBEpaJqLyS4jg7ZLAntaE3FBhnXc41PIHKrxm2n3SntKzLcjOBcxS3CAWRbp+jYFglRJJJUbH6HMU5p+s02vUxuo0qbamZdeOSFA8VeUqt2UPIiO5WkGralPQual51xbhTKpJUqxupKOQHJQtc9r2MPraTQVd03VPfNVOZYpq0JT7SYyoot2Kb2Sb2z3HbMAotAlzvCli8NsueXt0rSO14Gu1rkgTxhmaUxGr0ZjiXqG9RbUEEEM4dQQQQRIkcVuToKS1TKKeYQyzUU5SpY/adPSLuAfFYDF44zSW0SnKQuTrSWm2+fQ4Wx7lNj4UDa3keRDoggKdYJU1d49NTFVS5ajeUkEsz7HERptOaXodAQoUyQaacWQpbpF1rVxCeRPzIGbWjcwQQWhCUC6kMIsS9Y//9k="
+      "image": "https://www.elecrow.com/media/catalog/product/cache/1917af0aa5ac872287906ce8b861b1aa/p/i/pico_w5_1.jpg",
+      "url": "https://www.elecrow.com/pico-w5-microcontroller-development-boards-rp2040-microcontroller-board-support-wifi-2-4ghz-5ghz-bluetooth5.html",
+      "flash_bytes": 8388608,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gODAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EABoAAQEBAQEBAQAAAAAAAAAAAAAIBQcCBgH/xAAvEAABAgUCAwYHAQEAAAAAAAABAgMABAUREgYTISIxBxRBUWGBFjJxcpGSoVOi/8QAGQEAAgMBAAAAAAAAAAAAAAAAAAMBAgQF/8QAIhEAAgMAAgIBBQAAAAAAAAAAAAECAxESIQQxYSJBcYGh/9oADAMBAAIRAxEAPwCy4QhAAJAFyQB6x43W/wDRH7CMjXKy3pKpLSrEpYJByCbcR4lK7fqfpEj9ms73irfB1KfM3MIdmnnHphstYqKlOFNibqHEgKTw87HhCbbXD0tLVpSnxbwtAONk/On8iPQIIuIlvW1Pr9EoUvNoZp6xKzAdmLvLQvBam0cgwIJHMebhx6eBorQrhd0hS1leZMunmyCr+4SkH2SPpEVXObxrAsShPinptQhCHlRCEIAMXXWZ0jUw3kVFg2xCif8AlaFfhQPrHHdA0uQb07TaimRlROhpQD+0MyCpWQy6/wBjr3aGWxoqql7aw7uct3DHqOu4lSfyCI4bpTV0jTdKScnM0+rOOMNrK1syhcQQFLNwpPUWBPsfKMtzyREJxjP6nnRq9qab6DqDgFlXZHUk8HkeoP8AQfK0dg0Hn8H0vczz7um+YWFe+alK/KifWJ71rrmjV3RU9LU+VqDmQaSXDL2bQS6n5lK5UjgevkYoDs62/gikbQaCO7JxDWGNuPTbATb7QBEUPZEyshOa4vejfhCEawEIQgAx9aJcVpaoJaU4lZZOJb3MhxHTa5/14xAOuJmryrwShTkqgvFCFszKjmmx+ZPVJ8SDx4/WL47QS0NFVbe2tvuygrd28Leu4Qi33G0RhriepCKBKNaXuKkEL78p1Fws9E4XJSLAEK8L2tGW5pTWnP8ALnXG2HPPjf16Pm9FVmqinOU9U3Md0mKg0HvFJNxY8BkDfjyn+xe+htz4Spu6XCvZGWe5le567nP+3GIf047SXNNzz1fZDtdmFNuSq22k4pTkM8uiQSLY+F8r2EWz2bls6GpBaDQR3cYhsN49T02yUW+0kRWh7YxfhPldZLU110nuY318b7PoYQhGw6ghCEAGTrFmZmNMz7MmlSphbRDYSspJNx4hKiPYGJE1fR9UaU01UajXaImW35hoSJZZKXMeYqDhx5lZYk3HEW9rRhC51KT0W607I2P7b/SE+zOS1NqanTa6fQp6pKZswshKlbCzZQX0ukXCjax4+cWnoiXmZXSlPl5xC0TCGrOBaiog3PiUpJ/AjYSlKb4pAv1sI/YiFSjLSsastlZvvOvwIQhDRx//2Q=="
+    },
+    {
+      "name": "Elecrow RP2350 Pico W5",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "8 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [
+        "WiFi",
+        "BLE"
+      ],
+      "connectors": [],
+      "smd": true,
+      "notes": "",
+      "image": "https://www.elecrow.com/media/catalog/product/cache/1917af0aa5ac872287906ce8b861b1aa/p/i/pico_w5_with_rp2350_chip_1.jpg",
+      "url": "https://www.elecrow.com/pico-w5-microcontroller-development-boards-rp2350-microcontroller-board.html",
+      "flash_bytes": 8388608,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gODAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EABoAAQACAwEAAAAAAAAAAAAAAAAGBwIFCAT/xAAtEAABAwMDAwQBAwUAAAAAAAABAgMEAAURBhIhByIxEzJBURQWI4FCYWKSof/EABgBAAMBAQAAAAAAAAAAAAAAAAABAwQC/8QAIxEAAgIBBAICAwAAAAAAAAAAAQIAAxESITFBYaEEIlHB8P/aAAwDAQACEQMRAD8A7LpSlEIpSlEIpSo5M1xpaJeW7S/eI6JK07hlXaE89xV425BG7wCMEg0iQOZw9ioMscSR0rVab1HZNRxnZFkuLM1tpZbWWyeD/Pwfg+D8VtaYOZ3FKUohFeO7XKHa4hkzX0tozhIJ7lqwTtSPlRwcCo5q7XMK0uLgwEfnXAcFCD2tHj3H75Bx8/dUZ1PevF6ivybpJkTCtCgI0de0N4IJGMdwChkJOcHP3UXtxsJK5nVCyDPqSzU3WKzXV+dGMp+NZozaytbBwuXgKG1C/wC+UHjapJB81RI1bNujjfozHJbaH1OSYiT6a5SVYCi4oeV58eRz4+Kq28/qyLqRDbseS1OQQ7HYbBDCAedyUnjbjGc1dvSR9hm0Pybfp223G8XVj8dTraQtCVL9yO7hG7aQB2kqOPo1Bsj7E5mJBYNL2sNQ/Ge+j+vPuV9NepmlbLrmBam4VygMyEJSue41gOq259JAOcNgjBPKifBHg9RRX2ZMdEhhxLjSxlKh4IqnumXST8SIh7UTinmypS24ygQEpV/TtPtSUkAoI3BSAQqriYabYZS00kIQgYAFWp1Y3GBNlNl1g1WDHjn3MZkhmJGXJfVsabGVKx4FUvqHqXP1Jfn9NadYlxEhneiVt7HF7kj0Vr8NrzkYOUqzgKzwLtPNVP1M6dObF3TTTZSkEuPwGhgE+StsD5/x/wBfo8fKNqrlBkdzVUiM2HOP7uV9PmNWyG1FkymWHpCiw2hf7avVRj9nYRu5BOSDnA/isJ94tVhZXJmPIKdvaEjlxWcYSOAQPv2DOCRVP60jxtZ9QnUtyXrvdbeIrSw60pTEVKFbChTuQGlHKcqJ4IGcfF+9MOjsyTIZvurZElcjtUkOk+okgDAAPtKVBQOdyVJVwPmoq2sDTyZ1YwrJXk+JE9MadvvUG7F9dkTb4iFj0l+HUNnGQSR2koUFp3J2nGE4xk9A6E0NaNKw20R2W1yQDucCMJBUQV7RyQCobsEnBJxUhtdvhWyE3DgRm48dsbUNoGAkfX/a9Naa6Qu53MxrSoc2Y3MUpSry0UpSiE07el7C3e3Lyi2R0zXVFS3AgAlRTtUo/ZIwDnzgVuKUpBQOIgoHEUpSnHFKUohP/9k="
+    },
+    {
+      "name": "GHI Electronics FEZ Pico",
+      "chip": "SC13048",
+      "cores": "ARM Cortex-M4",
+      "flash": "16 MB",
+      "ram": "128 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "Qwiic"
+      ],
+      "smd": true,
+      "notes": "",
+      "image": "https://docs.ghielectronics.com/hardware/sitcore/images/fez-pico.png",
+      "url": "https://docs.ghielectronics.com/hardware/sitcore/sbc.html#fez-pico",
+      "flash_bytes": 16777216,
+      "ram_bytes": 131072,
+      "thumbnail": "data:image/jpeg;base64,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"
+    },
+    {
+      "name": "iLabs Cpico RP2040",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "8 MB",
+      "ram": "264 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "BConnect"
+      ],
+      "smd": true,
+      "notes": "",
+      "image": "https://i0.wp.com/ilabs.se/wp-content/uploads/2024/12/iso-2.jpg",
+      "url": "https://ilabs.se/product/cpico-rp2040/",
+      "flash_bytes": 8388608,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAwAEADASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAAAwYEBQACBwH/xAAtEAABAwMDAwMDBAMAAAAAAAABAgMEBREhABIxBkFREyJxMkKRFCNhgQcVwf/EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAQFAf/EACURAAEEAgAGAgMAAAAAAAAAAAEAAgMRBCESQVFh4fAFMSIykf/aAAwDAQACEQMRAD8A4Kbjk415z2vrO9ydak31p2q9LdKVHgG+t0pI5B0eBGkSnUsRWHH3TwltJJ0wwOmSoKVOkBO1BWWY9nHNtr3J4A88keNcLwEmSVsYtxpLaE3ICRcngAZOruD03OdQH5RTBZtu3PD3EfwkZ/s2GmKkRgltLlJiIiMbw2qSf3HQcWyM+OLDOpymGIjjgeecalMLIbeLiSH1i29rkpBAJIBOQCOca7ZPZZcnyhe7gx22TzOgkirQm4ThMaT+oY3bNxSEqSqwNiO2CDoLWLEHXR6LWI0aoFTdGiyIaXlx3I7zKSl9tSfo3HPuNilXtIBFrkHSDPj+k864y3sY9ZSAjduLRB+gnyOLnm2iaequY+RdRyEcXZVtNpVQqN/0sZRbB9zqjtbT8qONM9C6ShukLekKnncU2ZulremxKd31KNiDYWwdX/8AhF2n16W3Dqkl8zKWkLjMXHputjuRbJSbXHe4PnTn15Q6PBpzs2ChiFIDZQgqdS22jk8G2STe/nSLJO1YeJnA1r3fj2kOKppDz0Nt2LFYivALbQiyXU4IO0ZvcqGTnULqoyG5qC9uajpSr0vTATdJzz4z+D86wVB4wHlR6e3HqZbSl9xQ3rcJ8KP03Ta1uCcdiayjV7/YyVRHWH54UoOMvqsotODsSeUEYI/sd9HpqywwkumABA5E9Pvx3RKBUHIkn124jrsXcA+g4SpJPwbHntpnqD1NkyDDoiExW3LOtrTfeFg+1Kz27WtkHm+qOrVKmwJDiqg6hl5xKQqDDTdZANvcOBkcnxx5X5nU9SkILUBtNLjm1w0dzqsEZX25+0DgaDjs/jtAcSbLcS5oa0/3xfP22KpvQ4Lq3qzNSh5w7jGjgKccIt9owL3BubcnVXP6llTg4wxFbjxXBZwu2ddcAvbco4H28C9xzpdabCSdtypRuonJJ+dSW8C+PjRBhO3FaGNgQY+2iz1P2qemVKfRqtHqdOeWzJjq3IUk2/gj8aZIz1c6hqMGqTX5dRQ4sqV+6AlmxHsI/N8cZ40rkDB/Oix5c2NGfixpj7DMi3qpbWU77G440Lmk7Ctysc9tA0n2uVmlQFOolLSlxSSkwIZ3ke7IWom1ueTfBFs4VJnUM6Q2qPT2m6VENx6cY2WoXuNy+ewwLDVI02hAISAB/wB0RPPNjqCO9u2gjgjj/UIjKENggAZOT5OpCVgWN+2owVm3fR0qBsDbTAmqS2rNsYHnR2z/ADqIjAuM6OysefkaIKL/2Q=="
+    },
+    {
+      "name": "iLabs Cpico RP2350",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "8 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "BConnect"
+      ],
+      "smd": true,
+      "notes": "2 MB of PSRAM",
+      "image": "https://i0.wp.com/ilabs.se/wp-content/uploads/2025/02/iso1.jpg",
+      "url": "https://ilabs.se/product/cpico-rp2350/",
+      "flash_bytes": 8388608,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAwAEADASIAAhEBAxEB/8QAHAAAAQUBAQEAAAAAAAAAAAAABgEDBAUHAgAI/8QAMhAAAQMDAwMBBwIHAQAAAAAAAQIDBAURIQASMQZBUWEHExQiQnGRM6EVIzJScoGx8P/EABkBAAMBAQEAAAAAAAAAAAAAAAECBAAFA//EACYRAAIBAwIFBQEAAAAAAAAAAAECAAMRIQQxEkFRYXETIqHR4fD/2gAMAwEAAhEDEQA/AMFpsCVUJqIkJlb7yzhKf+k9h6nRrM9mk2PTUS01KM4UJvKQflCP8STZXjNs6qehql1B0tMbrMHc01LQWtjjAcbkI5ssH6NwGRnxou6z6hrFTj+4coi6K0IwVKiBe8uG5J2EjCDcck4tnXQ4r4EkaomRfMDKn00pLy00p74laLFcZZAfRcA8DCvOM+mh8pUhRSsFJBsQRYg6OqQ62xFfeiUtLr8lDRcQwSUoIJCN5+m1/wB86snqM3XWVvS4zYcN1tLZX/MQ1wNyjhXHB/OgCy95OupAw0zVIxftpQLauanQZURpUlgiZEGS60Mo8b08p/ceuqi4Ivp1YHaVKwYXBi3xybaeb5uDppIAI06k2Ngb6eGR6RV59LcIYWl2Oo3cju3La+L/AGNha40QPVJzqCG1Fpc5cd9uxNPfUCFWzZB+pIN7JH40JXsc6bWlKubg9iOdTNTzdcGBqasbncQ+osj+BU5VQnKejSlkIUBhSVf29xYjknse2raDMkVaMoSG9iFoIc90Ddy9zuIFrYFrD08aCqf1Gotph15pU6Mce/T+s3nk9lDPfProrhJhSKeH2HPjooSEMqauCyTblOCFAeRm1tZaljwvic3WUSvv4bnr9j+v2keLVIlIQyxEhre+HbLb8hLx3KVk7h+QDa1wOOdOVCnUarNKksK+GcwkyG29rZWRcJWjsccjz31VqpsZElswpKyHHClQWiwSm9gfv38a0tzoiTS+nIVYRBcXHd+Ro+4UdpWoALWfHck9uL3OnYDfYwUnDrfTG55/vfxMjqtIn0vaqS1dpf6byDubX9lf+OoqCBgjWyU9NAj0msmoPj4tDRbixmmCGHVpIBUpWUqAx8vIBzm2s6qkSiv0t6qU94xFNK2FhXzIcXexCD2Pob8HjGsHKmzS1K4JCthjygUCDg68SQTnGuCec6S/a4J0ZTOzbz+2nYMuZTpHxVOkLju2sop4WLcKHCh99M30l++gVB3mhnTOpadUlpFQbbp84ZCwqzDvgX+jnv45GtmoXtTnJoVRolep7EZKIbjUZW4qadTt2pRxk554x218yFIVzxq6oHUNQpKBFxOgKwqM8f6RfOxXKe+OM/id6ZFrZE8PQCFmpWDH58zRPZ/1ZSaTVZEjqONLqsOMHNqwpG1K+FBxOCSo2B5JNr8aAapUVVCUVJb9xHQpRZYCiQgH17ni5+3jXNfqLUyRshRzGhJWVoQbblqOCtVuT6dv96hJV8ot2zqhepi0aRADVMtP/9k="
+    },
+    {
+      "name": "LuckFox Pico",
+      "chip": "RV1103G1",
+      "cores": "ARM Cortex-A7",
+      "flash": "0",
+      "ram": "64 MB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "CSI",
+        "microSD"
+      ],
+      "smd": true,
+      "notes": "",
+      "image": "https://www.luckfox.com/image/cache/catalog/Luckfox-Pico/Luckfox-Pico-1-1000x1000w.jpg",
+      "url": "https://www.luckfox.com/Luckfox-Pico/EN-Luckfox-Pico",
+      "flash_bytes": 0,
+      "ram_bytes": 67108864,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2OTApLCBxdWFsaXR5ID0gOTAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EABwAAAICAwEBAAAAAAAAAAAAAAABBggCBQcDBP/EACoQAAIBBAICAQQCAgMAAAAAAAECAwAEBREGEgchMRMiMkEUIxZRQlJh/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EAB0RAAICAgMBAAAAAAAAAAAAAAABAhEhMQMSQTL/2gAMAwEAAhEDEQA/ALl0UGlugHRS90aNAOisJHWNC8jqij5JOhULwvlHiWX5d/jdleM87R94p+n9MvoHSt8bI7a/e0ca9VG0nRaeyb0UlKsoZSCCNginVII0UfNKR0ijaSR1RFG2ZjoAf7JoDIVHubcxwfEcc93lryKNwnZIS4DNs6UnfpVLaXu2lBYbPuobzvyvBa3jYTi4hu8iWKGeZgsEThmGmJI/5IUbZBXsrAMK5dxvA2XkHj19cZ66a55Akg+sl394tJhsI2lI7xuqoGYa79CfRrHa8RN9a+jQ838u5ryHnJMLi43jxIUu0SzCEtH29Fuw97UjfyVeMFSAd19Pjjk1pxblrSXUS3FtL3BaL6bfSkYg9mkYEgfPZt+ydnYOx433CoM7nMTa4+1yFvyO3hkt7+KaUKsbqNB4iNKYwDvQAToRvTbBihwObTklzx+GB2lgl/j3MEMG3ecKT2WQfmGj28aghz1IHxWOOcavRqcXdItN4w8ocW5rncnh8Bk4rk48DZ0R9b/s0e/TKPQP79g+gRXQ91xLwj4Vj4rlIeS5ZkTKKgQRwqo+FCfcVAGvt7DqAdOQ5au210i78ObVBVZPKnkLlmZy2YxCWk1hjMbOtvdW/QxyqW/F33sPG4LRkjsh7KdAkGrOfuue+YeFS5y1XP4WCF87YQNGIZB9l/bHf1LWT9kMCevsaYg7pJWWLoo5y7K5eW8aG/LW7WpAjiDN0jA/Ftk9nbWiGJqacK5RnZ7aHN469bH5O1j/AIhaSDcN2hIIU/tj69KATv4rXXmKss7yd7fGWN/kFWYiKOaUbRvYW3lY+g4ZGUAfmwGvZ1Vh/F/hVtQZLlbsyov9NsgMel966r8xgj6bA+pVZSO2jqo5VhbLXrIP4/4nzHnHJxyBr2+hcsGN+zfRZIyugE67CL0kJQDvsoVcKfYsTwTg2F4jbD+HCkt6y6lumTTEk9mCj31QuWbrs6LH3Uks7W2s7dbe0t4oIV31jjUKo2dn0P8AZJNetFHNvZHLFLQUUUVsyOkadFAaDG8Q47js5cZq0xcEd9cM7PKF+C5VnIH62yhj/wC7P7Nb6nRUSS0VuxUU6KpBUU6KA//Z"
+    },
+    {
+      "name": "Luckfox Pico Max",
+      "chip": "RV1106G3",
+      "cores": "ARM Cortex-A7",
+      "flash": "256 MB",
+      "ram": "256 MB",
+      "usb": "type-c",
+      "dimensions": "21x72",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "CSI",
+        "microSD",
+        "RJ45",
+        "RTC"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://www.luckfox.com/image/cache/catalog/Luckfox-Pico-Pro/Luckfox-Pico-Max-1-1000x1000w.jpg",
+      "url": "https://www.luckfox.com/EN-Luckfox-Pico-Pro?ci=530",
+      "flash_bytes": 268435456,
+      "ram_bytes": 268435456,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2OTApLCBxdWFsaXR5ID0gOTAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EABsAAAMAAwEBAAAAAAAAAAAAAAABBwUGCAQC/8QALxAAAQIFBAAFBAAHAAAAAAAAAQIDAAQFBhEHEiExExQiQWEyUXGBFUJicpGh0f/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAaEQEBAQEBAQEAAAAAAAAAAAAAARECEiEx/9oADAMBAAIRAxEAPwDsuCAwswDghcwYMA4IWDDgCCCCARgg7jyzM8yyMJPiK+yf+wJNesQRhBUZsvhZ2hA/kA7/AHGh6t6hXXQpKdFvWy4pMvszOPkEL3e7aAcqx7k9cxLZGvNUmtVil0WSXO1WeYk5dAyVurAH6+/6jS7svafRbz9VpPkpCQ8t47NQnVhSHgegkJyEkjoq7yBjvHJVaumsXDP/AMRrdSXPPb9wExy2n42+w/HIwPsMbRYM9eTdMm6LZs0Juk1JIIkX5YqRKOlQ3pb3E5SR7jOSR6QcGF/PqyRetOtXKTW5CQZqc6iUrDpSw7IvgNveIelAHAKSMHdwk5GOeIqmYi1C0mqlenZSs6gVNU3NS7aG20JACwEg9qHOeTyST/rFll2kMS7bDedjaQlOTk4HzCXU6kj7UdqScE4GcDuOdbH1kdZ1brGmN7yL9PqHn3BRphaRmYaWStptYTwF7CNp6PRwe+jPeJ3qDpdbdevCm3+aY67cdHCVy6mXtnjbDuSlQPpJ7Azj6jk9EKnNxmG3ZxalLVLtMM44K3crA+5AGB+MmIrqbfU5VLsTbtiTjFRm0yj7U5sTvSlaloQlOQe8FXWecDsiNhdtfVDUOotu1WfVZ1uJIJkkNhcy+QT9QPGP7uP6T2aPp7pxaFiSxRb1IaZfWMOzbnrfd/Kzzj4GB8RjPUdL1lSOytBFz8+axdZS2XDu8un1Z49weyTySrk+454ulvW9SKBKpl6XJNMJAAKgPUcfP7P+TGWhRuRztEEEEVDhGHBAKCHBAKCHBAKCHBAf/9k="
+    },
+    {
+      "name": "LuckFox Pico Plus",
+      "chip": "RV1103G1",
+      "cores": "ARM Cortex-A7",
+      "flash": "128 MB",
+      "ram": "64 MB",
+      "usb": "type-c",
+      "dimensions": "21x72",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "CSI",
+        "microSD",
+        "RJ45"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://www.luckfox.com/image/cache/catalog/Luckfox-Pico-Plus/Luckfox-Pico-Plus-M-1-1000x1000w.jpg",
+      "url": "https://www.luckfox.com/Luckfox-Pico/EN-Luckfox-Pico-Plus",
+      "flash_bytes": 134217728,
+      "ram_bytes": 67108864,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2OTApLCBxdWFsaXR5ID0gOTAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EABsAAAICAwEAAAAAAAAAAAAAAAABBgcEBQgD/8QALxAAAQMDAwIEBQQDAAAAAAAAAQIDBAAFEQYhMQcSE0FRYQgjQ3GBFCIyM0KR4f/EABcBAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAfEQACAgEEAwAAAAAAAAAAAAAAAQIRAyFBcbESUWH/2gAMAwEAAhEDEQA/AOy6KDSzQDopb0YNAOilg06AKKKKARoo5rDuFyjQhhau9zyQnc/8o3QSszRRUYXe5xkhxIQlofTxz+ec1CutPUW9aatDLsGIqHFkK8E3BIS6pCyCe0IOANhnJzUKaZbg0TrWutdN6PhKk325sx1dvchkHudX9kDfHvxVR3jrlexIjXS2WJLtnWvtLJPz1tkf2DOMkchI2PrUBiawtN/tzULWunjeFqWENXe2K+YCT9RKj3Nn15SecCt1pPScSRp56G5bZX6lbp7JhkBAjskkgZGMH1PJztgbCZZFFXLRGqPouHpt1OsGrZZgR7oyZXhpWGXkll7J/wAe1QGSParAzVcdPNEW6A8xOEYrLWChZBSgEDYpB3J43PpxVj1uKbkrquSZqmB2/wBVy/rT4hbZpDrBdNNastT6rE46h233qGz9FbSCCUcPoCyv96SDgcHFdQ+dVf1o6JaP6oKtT97ZktPWxR7DFcDZdaVuponBwM7jHBJ9TVtWYnRIrRGNwjxrjHfjOQJDSXmF7nx0KSFJUOO0EEHff2FVH8TF5tF7kWbQMCWp64mcHXUR0d3hYZcKUEjZKlHy5wD7VJtSRNdzfA0LoyNKsttgMNRXbnJSO5TKUBI7FDzwORknf+PnutH9I7TYSqUuY9IuLyu6RKICVrJGFYxxnAyeTXKnVxOja3K76c9N2Lb4bTcNb8wgFTQIyk+rixkDH5PsKuexaUYihDs8ofcRuhpAw039h5n3Nb+3wosCOmPEYQ02nySOfv6171kMFPym7fXC27+kuey0EAAMDYCnRRXcgdI06KAVFOigFRTooBUU6KA//9k="
+    },
+    {
+      "name": "Luckfox Pico Pro",
+      "chip": "RV1106G2",
+      "cores": "ARM Cortex-A7",
+      "flash": "256 MB",
+      "ram": "128 MB",
+      "usb": "type-c",
+      "dimensions": "21x72",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "CSI",
+        "microSD",
+        "RJ45",
+        "RTC"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://www.luckfox.com/image/cache/catalog/Luckfox-Pico-Pro/Luckfox-Pico-Max-1-1000x1000w.jpg",
+      "url": "https://www.luckfox.com/Luckfox-Pico/EN-Luckfox-Pico-Pro",
+      "flash_bytes": 268435456,
+      "ram_bytes": 134217728,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2OTApLCBxdWFsaXR5ID0gOTAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EABsAAAMAAwEBAAAAAAAAAAAAAAABBwUGCAQC/8QALxAAAQIFBAAFBAAHAAAAAAAAAQIDAAQFBhEHEiExExQiQWEyUXGBFUJicpGh0f/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAaEQEBAQEBAQEAAAAAAAAAAAAAARECEiEx/9oADAMBAAIRAxEAPwDsuCAwswDghcwYMA4IWDDgCCCCARgg7jyzM8yyMJPiK+yf+wJNesQRhBUZsvhZ2hA/kA7/AHGh6t6hXXQpKdFvWy4pMvszOPkEL3e7aAcqx7k9cxLZGvNUmtVil0WSXO1WeYk5dAyVurAH6+/6jS7svafRbz9VpPkpCQ8t47NQnVhSHgegkJyEkjoq7yBjvHJVaumsXDP/AMRrdSXPPb9wExy2n42+w/HIwPsMbRYM9eTdMm6LZs0Juk1JIIkX5YqRKOlQ3pb3E5SR7jOSR6QcGF/PqyRetOtXKTW5CQZqc6iUrDpSw7IvgNveIelAHAKSMHdwk5GOeIqmYi1C0mqlenZSs6gVNU3NS7aG20JACwEg9qHOeTyST/rFll2kMS7bDedjaQlOTk4HzCXU6kj7UdqScE4GcDuOdbH1kdZ1brGmN7yL9PqHn3BRphaRmYaWStptYTwF7CNp6PRwe+jPeJ3qDpdbdevCm3+aY67cdHCVy6mXtnjbDuSlQPpJ7Azj6jk9EKnNxmG3ZxalLVLtMM44K3crA+5AGB+MmIrqbfU5VLsTbtiTjFRm0yj7U5sTvSlaloQlOQe8FXWecDsiNhdtfVDUOotu1WfVZ1uJIJkkNhcy+QT9QPGP7uP6T2aPp7pxaFiSxRb1IaZfWMOzbnrfd/Kzzj4GB8RjPUdL1lSOytBFz8+axdZS2XDu8un1Z49weyTySrk+454ulvW9SKBKpl6XJNMJAAKgPUcfP7P+TGWhRuRztEEEEVDhGHBAKCHBAKCHBAKCHBAf/9k="
+    },
+    {
+      "name": "Milk-V Duo",
+      "chip": "CV1800B",
+      "cores": "2x RV64 C906",
+      "flash": "0",
+      "ram": "64 MB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "CSI",
+        "microSD"
+      ],
+      "smd": true,
+      "notes": "",
+      "image": "https://arace.tech/cdn/shop/files/Duo-02_7a68c567-cfd2-495b-a3c1-d04371f7c886.jpg",
+      "url": "https://milkv.io/duo",
+      "flash_bytes": 0,
+      "ram_bytes": 67108864,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAgHBgX/xAAyEAACAQMCAwYEBgMBAAAAAAABAgMABBEFIQYSEwcIIjFBUSMyYWIUQnFzkaEVQ1Jy/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAIEAwH/xAAdEQACAgIDAQAAAAAAAAAAAAAAAQIRAyEEEjFR/9oADAMBAAIRAxEAPwCy6UpQHJdqHGcfBWhrqT26XBYuFjYyDmKqWwCiNgnHm2B9azC27e9Sv4RPaaBZwR+HaadnJyMg7AY/Q10Xeeuo7bgqPnuIojJ1kVX1CS26hMRHKAikSn7GwDUm2OrahptvPbwjqTJMJJy8eFkHLgKPbYenqMetSm22SmlPb0UzddueoafpqX13oFpcK1wISsdy0QTK55iSG29MYrRey7jWHjfRX1GKCO3K8nNErSMU5lzglkUEjy8OR9aii54ufUtNe2v7aRQ0qTRrEpyhKchX3IIOdxkVV3douYrjhKZY7hJOmsCtGNSkuWiPT8mVlAiP2LkfxS2mhKSc6Xhq9KUqihSlKAyTvRXZteA8fiDEJFmVl/ySWokHSOVKsD1Qf+FwT7jNSDpsnVijilgMJUDlWeKT4oG/NkADBG2M/pVgd56a4h4Dd7drhfhXAbpNbAY6R+brbkft+L2qL9eujpcq2t0peUhZAwHkrKCMA+2amPsjLmpzUWrPYlmMV8DBAXZhjpW0cmFXAyxJB9Rvv61W3dgvHvOCmLXTzKiwhUbUo7kRDk+UKigxD7Wyf4qN+GtRsbm1u4fwLz3BixFJzchjY538PmNgN6szuyyXUnBAN0JwRFAqhzbFQBHjC9HxY2/2eL+6S9ReNVKkqRq9KUqjuKUpQGS956zlvOCVjjtpJuVZ2Yrp8VyEHSPiJcgxj70yw9BUSa9aXGpSrPFJHI6qA2WwcAALkY89qtXvTwrNwXCWtVnKCcqTp0lyU+H5hkIEJ+9sge21TVw7qml2mlW8E/LDcRhkkVo2Yk8xIPMAebYjeoi9yOfRSyJ+OjgtEsr3SVuXkwGcYUJ4ixHmB77Z23zVtd2W3lh4LaSSzktuskEil9NitucGPOQyEmXz+ZsH6b1O2sa/oc2iXcEYSa9aMJAvRIIPMG8yMAYB3qg+67EqcGzSLaxwmQQsSunS25fweZdyRL/7XA/mvZPaKces6uzXqUpVFClKUBj/AHpEtn4PgW4e1Xafl6zXAJPT/L0ts/ueH39akmeBBYm4TnjeDkCqG2Usd8+5yKuLta4QvOMtCXTbO9a0OJFZvxUkSkMuMME+ce6nastt+7vKIoTdX1lNMscIlbqzYeQTFpW33w0eFA9Dv9ahNxb0ZeRilk1H4ThpSzzWl9NKZHk6oAb2BGfLB32qtu64IBwfOIZbWVsQdRoXuGOen+bq+EH9vw/1XNHu93MSSvZ6jYwz9KUQkvMVSQzc0RI9QseVx6nf61qPZNwje8HaE2m3l690cIFJu5JlAVceFXHwx9o2pbk06HHwyx6l8OzpSlWaj//Z"
+    },
+    {
+      "name": "Milk-V Duo 256M",
+      "chip": "SG2002",
+      "cores": "2x RV64 C906 + ARM Cortex-A53",
+      "flash": "0",
+      "ram": "64 MB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "CSI",
+        "microSD"
+      ],
+      "smd": true,
+      "notes": "",
+      "image": "https://arace.tech/cdn/shop/files/Duo-04.jpg",
+      "url": "https://milkv.io/duo",
+      "flash_bytes": 0,
+      "ram_bytes": 67108864,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAGgABAQEBAQEBAAAAAAAAAAAAAAUIBwQCBv/EACsQAAIBAwQBBAIBBQEAAAAAAAECAwQFEQAGEiExBxNBURQiQiMyUmGBcf/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAhEQACAgIBBAMAAAAAAAAAAAAAAQIREiExAxMiMkFRYf/aAAwDAQACEQMRAD8A2XpppoBpppoBppqdfr7Z7DSGqu9wgo4gvLMjdkAgEgDsgZGSB1nvRugUdNTtvXy13+2x3C1VcdRBJkAqwyCDggj7B1R0A001F3Rumx7bpWnutdHEcNwiBzJIQpbiq/LEA4HzqNpbYLWpO5NyWXbtI1Tdq+KnUKzKhOXfivIhV8k47wNcY3T60X27JWR7Hs8zwU/PlV8QSSpVh56wykgrjkD4Os37t3rWz1k5uPu3KrkVeL1cjMqAA8GI/mwBIBbOB1rOTlwZk2uFZoffHrvdaq5ratk2lZo35qtW8mebLk4XHQVkxhs5B61wveW5txz1YrbjX/kToAzRVT8hPKFClSvWDxHnIycZ1A2zdrhUmM2hZY6uFwwSBjk4B7A+es+cj/mqNSaq7OXqojKJskVZj4moPnkVPQYdEjGOjjrTH7Jk6/Ttmyt4WO2WKi3NbrhSW2gjXC8l9tchQWTh5P0QPBH+taPsNyp7zZaK60jq8FXAk0bKwIIYZHY1h3ZuwbldpFgjtvv1Z5PG0SljJzTkrEeE5hT+/jIxnWs/Rfal52jt17dcqxZITIXhgzkxgnJJx0pOe1XK5GR5OpGSukdW3L4o+/WS47qtW2xWbZMK8XH5EjAZiXIPIluuHRDfIyCDrJO4rlU17yyXqueQlVQiVmZ245K9f3MRnpifAHY71uyaKOaF4pY1kjdSrKwyGB8gjWVvXjYMVivcczsBbqhy0UhfDsPLLnDMzqBks38SMDzqS1JOjj1VLBuLPyPpfu9LLVCC5VcYtdbJ/UJcn8KbwHJPiN8AH6OD4Op3rTadt3K6ios1WtTOw5zrRL7vBj9Efq3L/EEkdn516rLtC4XmRLfaLdEI2PERiFmaQMheNmB7CPjp268g67d6fehcFEiVN3mamHIukEDD3VyVdSWH6xurclPDIYfOmdvx2bhm4JSOA+n+x7zVNHFZqCWkrZUGJIyXkIZSY2P0jcWHLwD5xrvuwvQmnpvarb7IYXH7LFEwaYdq6lpPCOrclPDpgfOuy2Wz2uzUv41roYKSLJJWNcZJYscnyeyT/wB179O25ezNaW0eCyWe12WjWktVDBRwDP6xrj5J7Pk9k+fvXv0011Sog1O3DZqC+2/8K4Rl4xIsqMpwyOpyGB+D8f8AhI1R01Gk1TBPsVktNio1pLTQQUkKjAWNe8ZJwSez2T5+9UNNNVKgNNNNANNNNAf/2Q=="
+    },
+    {
+      "name": "Pimoroni Pico LiPo 16MB",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "16 MB",
+      "ram": "264 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "Qwiic",
+        "PiDebug",
+        "LiPo-PH2.0"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://shop.pimoroni.com/cdn/shop/products/PimoroniPicoLipo_2of3.jpg",
+      "url": "https://shop.pimoroni.com/products/pimoroni-pico-lipo?variant=39335427080275",
+      "flash_bytes": 16777216,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,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"
+    },
+    {
+      "name": "Pimoroni Pico LiPo 4MB",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "4 MB",
+      "ram": "264 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "Qwiic",
+        "PiDebug",
+        "LiPo-PH2.0"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://shop.pimoroni.com/cdn/shop/products/PimoroniPicoLipo_2of3.jpg",
+      "url": "https://shop.pimoroni.com/products/pimoroni-pico-lipo?variant=39386149093459",
+      "flash_bytes": 4194304,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,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"
+    },
+    {
+      "name": "Pimoroni Pico Plus 2",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "16 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "Qwiic",
+        "PiDebug",
+        "SP/CE"
+      ],
+      "smd": false,
+      "notes": "8 MB of PSRAM",
+      "image": "https://shop.pimoroni.com/cdn/shop/files/pico-plus-2-1.jpg",
+      "url": "https://shop.pimoroni.com/products/pimoroni-pico-plus-2?variant=42092668289107",
+      "flash_bytes": 16777216,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAGgABAQEBAQEBAAAAAAAAAAAAAAgHBgUCBP/EADIQAAEDAwMCBQMDAwUAAAAAAAECAwQABREGEiETMQcUIkFRCCNCMoGhFWFxF1ORscH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAfEQEBAAIBBQEBAAAAAAAAAAABAAIRAyExUYHBMmH/2gAMAwEAAhEDEQA/ALLpSlJfmuc+JbYapc10tsp7qCSrH7AE1wOo/GnQtntEu6InP3KPDebZkeTaKlNrX+lJCtvOOf8AGK9XxkaU9oh9tLSncupylLDzpxzztZUlf84+akiDBsRa1NppqdcrpHmzYrxebiObWXAlX29qsndyO/sB3ximPVS1o0NUOhfGjRmrYjsuI5NhMtv+X3y2doUvbuwNpV7fOK7u0XSBdo637fID7aFlClBJGCPbkCol0XcdMWV2DpRma6uYm4remkx3QlBQwUKBQjBOCFY/kDFVJ4DBJ0pJdbQUtvSy6g9B9velSUkKAeJJBHuMD4FMuif2gDu0OlKUpKUpSXG+MjHmdEPtCOZGXEnYIq5HsfwQpJ/fNSSxqPREbTt2sc6zITqBxvy8Z423YWXdpys5JV6gdnqJIPPbtW3jIyX9EvIEUSsOpV0zE8xnGfw3p/5zxUMaxfavGopkgQY8ABbbSUw4oZOUA5O0qOCc88nsKvGbyy9fa5fk92kTbzp6Si0IgacLl0XJ6jshVvKkvtKS9sQAjBJSUqGffJ744of6d040QtzySYQdf6gZTEcYSnchJwAtSiR7AjAPwKkXS13kqvdpitWxmWY7hyy5HKwpO1zaOmF4OC4cdsd896rn6dmi3odazBRC6r/U6SIfl0jKEnhO9WR/fIz8U5O57mPZ9Wl0pSpSUpSkuN8ZI4laJeZLAf3Opwgxm3+efxcUlP754qKNV2eRY9RyI1xZRGeO15CENoQnaUjHpSSkfpPY1a3jM2HdDvoLSXPuJ9KmWXB7/i8Qj+c/FTVZvDiZrHSse9RNOR5K5EcCK+9McjdVPqSnLSCUp9QxnPIGexphkGTt8fbSLiaPPyzzSMRVz1ZFhx2WpD0sLSltxsLBHTJzgkDjBIOeMA1YP07w1QNELjORRGcQ/haBFQx6ghIPCFqB5988/FTvZtBwzopjWLWmBDZiwnJRkecced2NhW9zpKwlRO1R25GB29qoP6bEoHh42tDQbStaVDDDLW7LaOcNKUD/AJPPzTkyFNPmYiDs8Wn0pSlmUpSkuN8Ywg6JfDgSUdVO4KDBGOf9/wBH/vxU0QW7Au+LXHvt+TDjxW0i3icGUx0YJ6hSxuSBjnJxjn3xVdX60xL1blwJqSplZycBJ/7BH8Vnv+hWh0z3JzH9UjvONJaV0ZW1JSkYHp24yPnvV49GSsy64gWLzYWltMJjQfOXZmM++tlpli5eYSptO8KSW1/bAV6ic8cY5Nbd9OqIzehlJhp2sdf7fojpO3YnGegducY78/NfMjwS0fJlQ5Ex+7y1QyVMh6UFJyRglQ2+o/3Vmu00hpu3aXtQttsCwwDn1hOewH4gewq8iKamGwRvZpSlZl//2Q=="
     },
     {
       "name": "Pimoroni Pico Plus 2 W",
       "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
       "flash": "16 MB",
       "ram": "520 KB",
       "usb": "type-c",
+      "dimensions": "21x51",
       "connectivity": [
-        "wifi",
-        "ble"
+        "WiFi",
+        "BLE"
+      ],
+      "connectors": [
+        "Qwiic",
+        "PiDebug"
       ],
       "smd": false,
+      "notes": "8 MB of PSRAM",
       "image": "https://shop.pimoroni.com/cdn/shop/files/pico-plus-2-w-2.jpg",
-      "url": "https://shop.pimoroni.com/products/pimoroni-pico-plus-2-w",
-      "notes": "8MB of PSRAM",
+      "url": "https://shop.pimoroni.com/products/pimoroni-pico-plus-2-w?variant=42182811942995",
       "flash_bytes": 16777216,
       "ram_bytes": 532480,
       "thumbnail": "data:image/jpeg;base64,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"
     },
     {
-      "name": "Waveshare ESP32-C6-Pico",
-      "chip": "ESP32-C6",
+      "name": "Pine64 Ox64 128Mb",
+      "chip": "BL808",
+      "cores": "RV64 C906 + RV32 E907 + RV32 E902",
+      "flash": "16 MB",
+      "ram": "64 MB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [
+        "WiFi",
+        "BLE",
+        "Zigbee"
+      ],
+      "connectors": [],
+      "smd": true,
+      "notes": "Power-only Micro USB",
+      "image": "https://wiki.pine64.org/images/5/55/Ox64_board.jpg",
+      "url": "https://wiki.pine64.org/wiki/Ox64",
+      "flash_bytes": 16777216,
+      "ram_bytes": 67108864,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAHAABAQACAgMAAAAAAAAAAAAAAAgDBwUGAgQJ/8QANBAAAQIFAgQCCQMFAAAAAAAAAQIDAAQFERIGIQgTMUEHcRQiIzJRUmGBoRUzsSVDgpHB/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAMCAQT/xAAhEQADAAICAgIDAAAAAAAAAAAAAQIDESExEhMEUUGh4f/aAAwDAQACEQMRAD8AsuEIQAhCEAIQhACEIQB13xI1XKaH0VUNUT0u7MS8ilBW22pIUclpR1Vt1VGjmOLnSrykhGl6uSopFvSGSRe/17W/MZOMfXE5JMJ8PvQ5ddPq8iiYffyIdSUv3ASegF2x1B6mJCm5KTps8H5cPkKuVEzBCgcgLpKQLXuI3CmnpmabXJXsrxa6UeUgK03VUZY3u+ybXBJ79rfmPel+KfSTuGVDqaMsb+1aNrpJPfsQB94imbnlPP8ApbLMvKuBIRi02B9Cfv8AGMkmZtLZsTgBc7D4/GLVjiXpk1dV0W+1xMaTViHKLVWiQD6xb+QqPfsRj5xnl+JDSDyM/wBOqKRsCSUWBLedtj8fV894kKfVMeiSTk1Mc5Uy0eWggDGy72Iv9THKSCah+kvFFOmwht9Dq1ZpQCEKAIBvfLKw2EceFeSSHsetldsePWk3WVvejzKEIuFFSkgAhoLt/s4+e/SNi6Ur8hqSkIqdOcS4wpRSFJWFC4tcXGxte32iL6xql+rNSFGckWZKXqbwlVzBaLrrGZTZQQk+uvbqDc7xUvgjQVaN0w3pNSnXxLuPOImFhI5oKwSoAE2By2vvtvEqjwS8nz9f03Nunx0av4yNETs4hvxAE7Kop9Kkm5V5hQPNUpb9gU9E2u4L3I6GJOypdUrErKLnQyy6rFxRSElN1Xte5A90D7x9I/EHSshrXSc3pupuvNSs0WytTWOXqLSse8COqR1EahluFfQ7HKAq9YXhy/eRLnLBKhv7Pvlc+QjkOZe2ardLRHNYaYckzT5EJeRJPLCH029qL7fj+IwyknUMCjlqxI3G3S8WnLcMGiWOV/Uqmvl8v3m2N8W1I39n3yufqBGdvhq0YlKAahUVYhAuWmN8WS18ne+XmIs8mN9pk1FrpkWrK2p5pl5BSSvJJURsmxH5/wCR3Km1SQcoq5R2abaded5fIcbBQlBcC1Eq69unT+IqNnhu0azYon58KCbX5TF/2eV8n+XnvHkeHHR9iBPTouCP2Wdrs8r5Ox9fzi1fIxU3tfX6J+q10yWGHpSR1VS325xqZkac8284ZV5TRcKBlZK7XSsnYKsfraLS8FdRjW+nE6sDL0qh559luXdCcmwFJuLpAuLp2J333jrR4edJYLQmcm0hQX/Za2yZDe3q9rZD6kxsnRempDSlFFKpt+QHFOAFITYqtewAAA2jz5bi9aXJTHFT+Tm4QhESohCEAIQhACEIQB//2Q=="
+    },
+    {
+      "name": "Pine64 Ox64 16Mb",
+      "chip": "BL808",
+      "cores": "RV64 C906 + RV32 E907 + RV32 E902",
+      "flash": "2 MB",
+      "ram": "64 MB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [
+        "WiFi",
+        "BLE",
+        "Zigbee"
+      ],
+      "connectors": [],
+      "smd": true,
+      "notes": "Power-only Micro USB",
+      "image": "https://wiki.pine64.org/images/5/55/Ox64_board.jpg",
+      "url": "https://wiki.pine64.org/wiki/Ox64",
+      "flash_bytes": 2097152,
+      "ram_bytes": 67108864,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAHAABAQACAgMAAAAAAAAAAAAAAAgDBwUGAgQJ/8QANBAAAQIFAgQCCQMFAAAAAAAAAQIDAAQFERIGIQgTMUEHcRQiIzJRUmGBoRUzsSVDgpHB/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAMCAQT/xAAhEQADAAICAgIDAAAAAAAAAAAAAQIDESExEhMEUUGh4f/aAAwDAQACEQMRAD8AsuEIQAhCEAIQhACEIQB13xI1XKaH0VUNUT0u7MS8ilBW22pIUclpR1Vt1VGjmOLnSrykhGl6uSopFvSGSRe/17W/MZOMfXE5JMJ8PvQ5ddPq8iiYffyIdSUv3ASegF2x1B6mJCm5KTps8H5cPkKuVEzBCgcgLpKQLXuI3CmnpmabXJXsrxa6UeUgK03VUZY3u+ybXBJ79rfmPel+KfSTuGVDqaMsb+1aNrpJPfsQB94imbnlPP8ApbLMvKuBIRi02B9Cfv8AGMkmZtLZsTgBc7D4/GLVjiXpk1dV0W+1xMaTViHKLVWiQD6xb+QqPfsRj5xnl+JDSDyM/wBOqKRsCSUWBLedtj8fV894kKfVMeiSTk1Mc5Uy0eWggDGy72Iv9THKSCah+kvFFOmwht9Dq1ZpQCEKAIBvfLKw2EceFeSSHsetldsePWk3WVvejzKEIuFFSkgAhoLt/s4+e/SNi6Ur8hqSkIqdOcS4wpRSFJWFC4tcXGxte32iL6xql+rNSFGckWZKXqbwlVzBaLrrGZTZQQk+uvbqDc7xUvgjQVaN0w3pNSnXxLuPOImFhI5oKwSoAE2By2vvtvEqjwS8nz9f03Nunx0av4yNETs4hvxAE7Kop9Kkm5V5hQPNUpb9gU9E2u4L3I6GJOypdUrErKLnQyy6rFxRSElN1Xte5A90D7x9I/EHSshrXSc3pupuvNSs0WytTWOXqLSse8COqR1EahluFfQ7HKAq9YXhy/eRLnLBKhv7Pvlc+QjkOZe2ardLRHNYaYckzT5EJeRJPLCH029qL7fj+IwyknUMCjlqxI3G3S8WnLcMGiWOV/Uqmvl8v3m2N8W1I39n3yufqBGdvhq0YlKAahUVYhAuWmN8WS18ne+XmIs8mN9pk1FrpkWrK2p5pl5BSSvJJURsmxH5/wCR3Km1SQcoq5R2abaded5fIcbBQlBcC1Eq69unT+IqNnhu0azYon58KCbX5TF/2eV8n+XnvHkeHHR9iBPTouCP2Wdrs8r5Ox9fzi1fIxU3tfX6J+q10yWGHpSR1VS325xqZkac8284ZV5TRcKBlZK7XSsnYKsfraLS8FdRjW+nE6sDL0qh559luXdCcmwFJuLpAuLp2J333jrR4edJYLQmcm0hQX/Za2yZDe3q9rZD6kxsnRempDSlFFKpt+QHFOAFITYqtewAAA2jz5bi9aXJTHFT+Tm4QhESohCEAIQhACEIQB//2Q=="
+    },
+    {
+      "name": "Raspberry Pi Pico 1",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "micro",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [],
+      "smd": true,
+      "notes": "",
+      "image": "https://shop.pimoroni.com/cdn/shop/products/PICOBOARDANGLEWHITE1.jpg",
+      "url": "https://www.raspberrypi.com/products/raspberry-pi-pico/",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,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"
+    },
+    {
+      "name": "Raspberry Pi Pico 1 W",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "micro",
+      "dimensions": "21x51",
+      "connectivity": [
+        "WiFi",
+        "BLE"
+      ],
+      "connectors": [],
+      "smd": true,
+      "notes": "",
+      "image": "https://shop.pimoroni.com/cdn/shop/products/PICOWHEROTRANSPARENT.jpg",
+      "url": "https://www.raspberrypi.com/products/raspberry-pi-pico/",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAMGBwgEAv/EADAQAAIBBAEDAgUCBgMAAAAAAAECAwAEBREhBhIxB0ETIjJRYRRCFRYkUnGBobHh/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAEEBQMC/8QAKxEAAQMCBAQGAwEAAAAAAAAAAQACAxEhBBJBUTFhcfAFgZGhwdETIqLh/9oADAMBAAIRAxEAPwDsulKUISlKUISlKjnnhgXumlSNfu7ACkSAKlCkpQc+KU0JSlebI5Cyx1u1xe3McEYBO2PJ0NnQ8k69hSJAFShemoL68tbGBp7udIYwCdsfOgSdfc6B4FZ51L6nxoWt8BAk0hf4azznSd3BHA8qRsb4IOuKxz1A9QLu3uOy8a6lvdEgTAEErvwvA43wfJHtUxxGY0jFeen2e7qSbGNjs0Fx5b7bddlteb9SITd/w/p+2/WXJ8O3062Odb+kjY2SNH2ql9WSZaG8hm6knN6JFV41tptiF+SC5Hggf2gb/O6w3G5+W/z9ncm6fGXCyFoo45AySb8qdjyaufXeOyWfxq5GxzUsl2Pn+E8o7HA1saH09v8AvYA2K4SR53ASGtfTvzrzWdNNM4ObJ+p02F/68rXuAtj6K63jErYrJOEuoVc25DGOBowNjlz+Ndx53sEDXOk4y8iyFjFeQOrxSqGR0YFWB9wftXJOJ/mTOW2PTIrDY22Pl/rFurdnW4VF0HVix+5B9hwRscV0P6dtnfiESWS22L7dKpT4YDAkfIvk71vfgg02YnI9sLW16af4tPDSulNCLb6d+vsVB1v11f466nsMPipZp4F75Hdd6AOiNfkcg7P+KxIdVX/UGVmXI3M0knmNpCQAFHDFf8cEgDWtkEbI6B9ROj4up8cxt55LPIKhVJY3KCRfeN9eVP8AxXOt101mIMndYmPH3JuLEB1c/K8B3sKW/cOPlYf9bFBYWEumdUaaAfCwfG8TjoJ2GFhc3YXrbhYV4V3HS6luu9HZZVO140daH/lfN9jMdmMeYL+3O3Pf3d2mfzsrs8a35A0P91DjZs1eRoP0kIaN1QmSIcbB0ASdLs6+oEDnWt8XLpToPI5y7S/FszB+3uuZSUQLtgygn5mZSPHIP3FOaZtcrbu5X7HWisjxI8Qia6JhvqbU6GmnIH3osq6d6MgjuZph3SS2wLCe6TSjTcNrwAPc81rXRXp5kclcLfNaOhcBZZ7piI9K2iqqOWPkqw458itU6Z6DxGKEc12i392vPdIgEaMVCsUTwAdb53Vtr1+CSW8poNh8n6VUHh7WuzzOL3c+HpwVY6c6JxGI+FNKpv7tNETTKNK3b2kog4XY865/NWelKqjjZGMrBQLRSq/1f0xaZ6H4mlivFQosvI7l/sbXlfxVgpRJG2Rpa7gUiAeIqqf056f4bF6e5QXrrsIjrqJFLBgvb+7RHBbZHtqrgAANClKUcTIhRgomlKUrohKUpQhf/9k="
+    },
+    {
+      "name": "Raspberry Pi Pico 2",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
       "flash": "4 MB",
+      "ram": "520 KB",
+      "usb": "micro",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [],
+      "smd": true,
+      "notes": "",
+      "image": "https://shop.pimoroni.com/cdn/shop/files/pico-2-1.png",
+      "url": "https://www.raspberrypi.com/products/raspberry-pi-pico-2/",
+      "flash_bytes": 4194304,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAYHAgMIBAX/xAAzEAABAwMCBAQFAQkAAAAAAAABAgMEAAURBiEHEhMxFCJRYTIzQXGBFUJSYnKRobHB8f/EABoBAQACAwEAAAAAAAAAAAAAAAACAwEEBgX/xAAvEQABAwIDBgQGAwAAAAAAAAABAAIRAwQxQXESISJRYfAFE4GRFDIzUrHBYqHR/9oADAMBAAIRAxEAPwDsulKURKUpREpSvAzerS9dXLUzcYzk5oZWwlwFSfuPX2qLntbEnFF76Vi2424CW1pWAcHlOcH0rKpIlKUoiV5Lvc4FphLm3GU1GYR3Ws4/7UQ17xJtOnQuJC5bjcgPlIV5G/51f6GT9q514hcQ5UyX4i6vybhLSR0ojA2bCjgYT2QD25j3qg1to7NPf1yHfL3hedd+JU6DhSZxPOAH56DVW3e9fXrWV5Tp/Sg/T4jnzJTiuVxScjJ9hv2GSR6VEbrGuGk9RKszCk+IxzpktqTzPg/CCVA8hyDvud/qKrG1ahlwOu/b0z5t5jlL5gB9CXW0kgZR9CBkbDf2r69/Yc1CyiUu5TY14iy0vh1Lh7YyULAPcHlwR/FvvUTQZ8zuI9ff20XN17+4+IayvLCDO1vIgYgNiZMxJicjkr64e6j8bKbkZksdTBWyEhfkx8ayDgAHI2yT32q0mnG3m0utLStChlKknIIrmvhxw+ul0uj9yZLrKpOfEy1ZQlZOebCewyf2RtvtXQWmLJGsFqRb4qnFoSSSVqzkn/FYpV3VX8AlnP8Azn/S6qzqVqjSaojvll6rferrb7Nb3J1ykojsI7qVuT7ADcn2FUhxA4oXK6hcCzdS3Q1ZCl5w86n7j4Qfberxu1ui3OIY0tsLQdxkA4P5qlOJmlLnbrkmc+0ZcAHDbjSeXk7nCh9D7nY1TdVHseDU+nmR+8409dy1fGW3rrYiyPH3h1joZ1gqE26zyVR1y5Ud5pBBKFqRkBX7yh3KT2z96+PxA0l132lzbabW84nmakMOZUMdyFfXuMpP9Kl18vN9MTpvxBB6pCw75uZeO2MkhJx+cbdq1aR0pfNUymm20ueHaAQXnCSlCQRsM+xzir33NGmAG7zkBnp3AzXC2FvfOq+Xbl0zJcREHmZE7xvjE/yCiWlNPRoLvhrRBzIeUkqdCeZxxXufT0HYVd+guF/J07hqHBVspMcfg+b++RU00Zoy06ZjJ6DQelY876xvnAzj0G1SWoCi+sdqvh9ow9eemGuK7qy8LbQPm1XF9Q5n9DAfnTBa47DMdlDDDaW20DCUpGABWylK3F6qVi62h1tTbqErQoYUlQyCKypRFC7vw8tVyvDEx5xwMNbhoKPrnHpipbAhxYEVEWGwhllAwlCRgCt9KopW1KiSWNie/bpgsQBgEpSlXrKUpSiL/9k="
+    },
+    {
+      "name": "Raspberry Pi Pico 2 W",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "4 MB",
+      "ram": "520 KB",
+      "usb": "micro",
+      "dimensions": "21x51",
+      "connectivity": [
+        "WiFi",
+        "BLE"
+      ],
+      "connectors": [],
+      "smd": true,
+      "notes": "",
+      "image": "https://shop.pimoroni.com/cdn/shop/files/PICO_2_W.png",
+      "url": "https://www.raspberrypi.com/products/raspberry-pi-pico-2/",
+      "flash_bytes": 4194304,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAQHAgYIBf/EACsQAAEDAwMDBAICAwAAAAAAAAEAAgMEBREGITEHEkETIjJRYXEjQhSBkf/EABkBAQADAQEAAAAAAAAAAAAAAAABAgUDBP/EACoRAAECBQIFAwUAAAAAAAAAAAEAAgMEESExQVEFEhOBsSJhwTJCcaHw/9oADAMBAAIRAxEAPwDstERERERERERERERERERERYTzRQQvmnkZHGwZc5xwAPyVp+uOo9h0yyWEP/z66NpJp4HZ7Mbe92/buMeT+FRfUXqfNMHnUEdbVyPZ30lrpWuiiB2P8hO7uBwSRvhczEqaMv4XjjzsOE4MF3HAH9bBVt6k6nGpqpbToqhfd65jS58zWExxgAkkffj6BztlahpHqXcaOeeC6XSapEx7nTztAbC/HxAO4xjHGD43yqa0Vru+2O4189mjmnrpIml1sE0bgxriAXMcR8hk7Hf9qVUQaiZeqyppLoam23MSFlQ9oMkcgcCcsIwXAnnyHZ8KjmAHmccdgs8TcwIwMQhuag9qU3vrYH7brsTT1xkuVD6s0PpSsPa8ZH1nOPGQQcHfdekqm6P2zWUbaOeofFR29jf5vUhAkqyf7HznYe76PnhWypgxTEBNKfK2ITy9gcRSuhUW7V0VtttRXzslfHAwvc2Jhe4gfQHK5+6idTtT3hopLXR1NroZmd7Q09s08fn3HbfcYH/V0WdxhU11Y6bTRvk1DpiKWR7AXPo2uJ7OcmIH+pySWD9j6Uva4uF7bLN40+aZLF0tkZ3p7fvFCtIsUVsdQF1LF3CUETesMyOPkPz5/C8zV9gpZbcI64PdSSx9kDXye9nb8S3O5YCcZGMZHKxgbcotRxU9uYyet2DzSyeoyQuGGggt5aSOeCMK2bB04uF7njuetKpz9sspGbYH0cfEb8DcEcrn1m2EO58fnbzsF5IT38QgBnS5XDJwARq0i57W3KpjQOhLrd54qex0ToIWODpHs9rTty93knBIOeQuhdCdNbRp5rKmqDa+vGD6j2+xh2+IP5HJ33K3K30VJb6VlLRU8dPCzhjG4H5P7UhW6ReeaKa+2g7fJWnKcPhy/q+p+rjlAABgIiLuvciIiIoVLabZS3Ce4U9DBHVznMkwb7ncef8AQU1EVWta0UaKKSScoiIrKERERF//2Q=="
+    },
+    {
+      "name": "RP2040 FlexiBoard",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [],
+      "smd": false,
+      "notes": "No castellated edges, Flex PCB",
+      "image": "https://www.cnx-software.com/wp-content/uploads/2024/10/Flexible-Raspberry-Pi-Pico.jpg",
+      "url": "https://www.kickstarter.com/projects/harshu/rp2040-flexiboard/description",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA2Rm91bmQgb24gQ05YIFNvZnR3YXJlIEAgaHR0cHM6Ly93d3cuY254LXNvZnR3YXJlLmNvbf/bAEMABQMEBAQDBQQEBAUFBQYHDAgHBwcHDwsLCQwRDxISEQ8RERMWHBcTFBoVEREYIRgaHR0fHx8TFyIkIh4kHB4fHv/bAEMBBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIACsAQAMBIgACEQEDEQH/xAAcAAACAwEAAwAAAAAAAAAAAAAGBwABBQgCAwT/xAAzEAACAQMDAgQCCAcAAAAAAAABAgMABBEFBiESMQcTQVFhcQgUFSIjMqGiMzVCUnKBsf/EABkBAAIDAQAAAAAAAAAAAAAAAAIFAAMEAf/EACcRAAEEAQMDAwUAAAAAAAAAAAEAAgMRIQQSEwUxUSJBcSQ0UqGx/9oADAMBAAIRAxEAPwDsoVOKztyXFza6PLPaMFmVkwSM92AP6Gl5Ybn3UdSkjkFz5AdvxZUjVelc5IHPw4qt0ga6qRBti01eKnFUpyufhSs3B4hatperXCTJGLRLmW3QQWjysCr4UsQeMqPbv6+lDNOyGt3uijidJe32TU4qmYKpZiAAMknsKEvDbcl/uO3v5b6FYhbziOMeUY2xgn7wJPpj2rd3NZvf6Fd2qXS2rPHxK35Vxzz8OOakU7Zo+RnbP6wo6MsftdhB25t8Mbx7TS5AkKcNMPzOfh7D9aCdU1sFmaeZi55LM2SaXf2pJrG900W2ub42XniNdT021+siaQsAqKhIOGyx6jwApYjHNN+TwPtLm4Y3u7daktm4McaRI2P8uk/8rG6OaU2UwD4IsApl7m/ksx9ih/cKWBjSO/kUWT26QXF0sJlmI8/qXqZ1U56wD27Y5pmbsONBn+aD9wpTfUNZi3trl0+tLNpvlyGKxHX+F1dPPI6ffseeqtsgyloTsj5RT8BSC3cYDu/UAL26t7h7mYQhFJQk5JYjsSPTNP2L+EvyFcxb4fcV3r90+jTrBGt7MZgSFyokIB57nGe2KRdfG7hbdZPn8T4ymnSsF5q8D+hOTwYj6dv3zmV5mN8ytI4ALlUQZIHHNDvj5u37OvLDbaavbab58YuZ2mXq8xOvpC/LIJPyFE3gxk7Pdyqjrvrggj1AfGf94oc+kT4aanvXTIdT25JAdZs06Da3L9MN7EHEgjY/0kOAQe3JB4NMOlj6KL4Cya77l/yV4fR40GwutKk3vNNLe3l9LKlq0zAi2iDYKoBwCSDk9/TtTdrn/wCi1ux9D0W48Pt5xJoes2NzI9vFcyIqyo7ZZVOcdSv1cZ7EYroAEEAg5Bpg0gjCykEd18+oWcV9atbTFwjEE9JweDmshtqWDBg93qDhvzBrgnPv6VvCrrpAK4qAwMUEN4Z6I8txK97qLNPK0vLphC2cgfd7cmjipVGo0kOpoStDq8q2KeSK9hpZW1tDttu6JFpVpLNLFGzN1zEF2LMSSSAB61q1D2qVbHG2NoYwUBgIHOL3Fzu5SP8AETa1rYasi6nBFdQXJZra5ZR1Ag5KN8Rng+te/YG6rjbGpx6Ld/WLjRpMkOQXNoccEH+w9un0JyPWi3xwjRtp28hUFkvo+k+2QwP6UudPJdWVjkCl8p4pfSmkR5oaev/Z"
+    },
+    {
+      "name": "SpotPear Dual-MCU-Board-A",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "4 MB",
+      "ram": "264 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [
+        "WiFi",
+        "BLE"
+      ],
+      "connectors": [],
+      "smd": false,
+      "notes": "No castellated edges",
+      "image": "https://cdn.static.spotpear.com/uploads/picture/product/raspberry-pi/raspberry-pi-pico/dual-mcu-board-a/dual-mcu-board-a-07.jpg",
+      "url": "https://spotpear.com/index/product/detail/id/1355.html",
+      "flash_bytes": 4194304,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAAgFBgcEAgH/xAA8EAABAwIEAwUDBw0AAAAAAAABAgMEABEFBhIhBzFhCBMUQVEVIjIWFyNDYnHhJTVFUpGSk6GxwtLw8f/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwQABf/EACERAAICAQQCAwAAAAAAAAAAAAECABEDBBITMQUiIUFR/9oADAMBAAIRAxEAPwBy6KKonF3OGJ5RjYc7hrcJfiVuJc8SFG2kJtaxHqaBNRXcIu4y90Uvy+M+bw33wgYOGfJZYdAJ9L67XqMHaBx9UoRx8nQ4CAtJbcJRvY3s5sBtv1pd4kBqkPQMZSilzxTjtmfDp6Ii4+AStRH0sZK3G/M/EHN+XlUqrjFmIZdi402nAZCZPwxmUOKfTztdOvp/Ou3iPzrdVN3oqicFs6YhnfLLuJ4nCRCfS+UIZDam1aNKTcpUSeZO9XumBuVBsXCsL7Wz0trDMB8OhCkqkLJujUfd0n02G+/rat0qn8TMhw88sQWZmISoaYilqT3CUnVqAG+oH0oOLFRMwZsZC9mJfMViU2Sphrv22SrU2FOWZRYAXKDtfrtUbEZCcVeYAdkrKFDw+kd3c2uEne53G5FjTUK7POBFRUMxYskn9VDQ/trmT2bMuJkmUjMOLpfJuXAlrUT+7937BSU1TGuHJXsPqviKtjkbFIuOvtSIMuI73gWlsgo0BXIkDlyNTT+FZiw6AzjzsV/2S6+Ch0rIQ5ZV9N0jUL2I1Dfn6UzEns+YVJeW/Jzbjzzy0aFuuFtS1DfYki55+foK+ns/YcrDUYavOWYlwm1am2CW9CDvyGnb4jR9vyWVXB66lp4U51hZvU4vC2Jy4jKChT7jK+6SsaToC17qNlX3FaBVS4X5Gg5CwaRhkGbJlofkF9S3wkKBKUpt7oG3u1baZRQqaQSRZhVX4gZ3wvJbER3Eo8x8SlqSgR0JURpte9yPUVaKw3taKkJgZf7hvWS6/fY7bN0WNC5LUZDjxlhJz59cqX/N2M/wW/8AOvZ455UH6Pxjz+qb6/b6Glo1y0FIEQGyAo2TcfhXK0ysxi4vvWylZS2rUSLE7iwFvM8z51E5Z47eUcMBGk+e3LJBIw7GNr/Vt9ft9DXtPGnLatX5Nxcab3+jb6/b6GllhwnkIKPEOe8b2LShfn+NTcZhAiS5LsoNFAUptJT8WxJ5+W5ojIZoTW5G7jXZLzTBzVAemQGZLKWXO7Ul9KQq9gfIn1qerIuzJIdfwDGO9UlRExO4AF/oxv8A0rXaqpsXPTxtvUNCs345ZTxzNUbCkYKw08qO44Xe8eDdgdNvv+E1pFFEi4XQOKMWhHCPP6UkCNG3HnNT/v8A2oyRwKzi4tK/Z0QqAO/jkjnfpTVUUnGJkbx+Fu4qrXA3OiAoezYZuQQfGpuLX6fdXfD4OZ3jOa0QYyVJvpImpJTz5UzdFdxiFdDiXqZ/wUyjOyphE5GKRmmpch8KulwLJQBsLjyvfbqa0CiimAqalUKKE//Z"
+    },
+    {
+      "name": "Uctronics Arducam Pico4ML-BLE",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "micro",
+      "dimensions": "21x51",
+      "connectivity": [
+        "BLE"
+      ],
+      "connectors": [],
+      "smd": false,
+      "notes": "No castellated edges, Camera, 0.96\" LCD",
+      "image": "https://cdn.tindiemedia.com/images/resize/-UGOU7NNcy60UbU6NgHGG9myU-U=/p/full-fit-in/2336x1752/i/292462/products/2021-09-06T07%3A01%3A28.704Z-B0330-02.jpg?1630886513",
+      "url": "https://www.tindie.com/products/uctronics/rp2040-dev-board-for-tinyml-bluetooth/",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAAAAgEBQMGBwEJ/8QANBAAAQMDAwMCBAUCBwAAAAAAAQIDBAAFEQYhMQcSQVFhEyIjMhQVFlJxkaFCQ2JygbHB/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAEDBAUCBv/EACsRAAEEAAQEBAcAAAAAAAAAAAEAAgMRBCExQQUSE/BRYZHhIiMycYHB0f/aAAwDAQACEQMRAD8AcuiioGoro3ZrNJubrLryGEdxQ2kkn+nA9T4FCTiGiystzuEK2xjJnSW2GwQMqPJPAA5JPoKyQpUabGRJiPIeZcGUrQcg0tWttbXy92tcWcxFbDzq+1cZ0rLo7vlQSQChODuRvsCCM1rSuuQ6aLjQnEvz7kXEiZDCsBLXku9xJDu2R5Od8Dl0qMeM6zz0s2j1904FFad0v6kaW6iWdM/T85C3APrRlnDrR8gj/wBrcaSvNcHCwiiiihNFB3GKKKELmPULpg3PS7cNMFEOYe5Soue1pwkblB/y1+429R5pNepPSyZCkTZTKhHnNOFUmK+C2d98nOySfXJSrwRX0B1TqSz6Zt5m3eWlhvhKQCpaz7JG59zwKobxaNJ9SrN8ULCnmwUtyG8Jfjk+CDyPVJyDXJB1Cp/LjlIiIDtx4+6+bumL7qLSGoW5tnlSrdcmFgfLkE/6SPIp7OhHWl3Vdga/VkD8tmJV8Iykj6LyhyR6Y8kbAkZ5rlHUHo07aLulM+HHWwtXbFlIBQ0T4SFctZPKDkEfbjc17oOy61v+umLVabeiJDtyUtyFSmcNMtePtwUkjdAQQd85O5qeCF81kUANbKrYjHgEMaCJDWVd32fu4CFJWgLQoKSoZBByCK9qJZ7fHtduZgxQoNNDCe45NS6iWo26z1RVNrSZeYOnZMmwwUTZyU/I2rfA8q7f8WP2jn+xuaKCk9vM0i6Sl3R1y73t65alvLjoKg2S59Lvxk/MM423HanG6d+3mq2H1Ceter2f078dLowklKCBIOwHanf5cAADH8g0xvUbpvaNVtLktNsxblz8Uoyh0+A4PP8AuG49xtS96otl50bqD4ptf4J9DC23S2QFKSojK0LIOEbcowRuCRUbpHtGQzXlm8Hiw07pMQ48pP1DUE7nwr9ru+heountbQVWq6ojtynB8N1h4fTd9sHg+x/4Ocgb7bYEO2xUxYMdDDKRslI/7PJP80n8pq4NswpzVvW4tTXcl5CSpDKVHjCftxkEk5zn+vXtA9SJ9rXFtWou+Q26FBtZBDrYScb5+4e3Pp4FWOk6r38s1rxzPgrr/ENnVR/IzI7tdrorBAmRZ8VEqG+h5lfCkn+3sfas9RrTBBFhFFFFCaKrdRWK16gt5hXSKl5vlCuFtq/clXINWVFBFpEAiilz1r05vWk7gq52ma8Iijj8W2VfTBBGFpBwnnkfKfPbUfRvSC/auv35vqu4tM2ZpwqZTCy2qSeDgHdsbYJO+237qZNSQpJSoAgjBBHNCEpQgIQkJSkYAAwAKnw+Jkw98h19VnO4ZE5wBJ5RnW1/zyUW0W2FaYKIVvYDLCOE5JOfUk7k/wA1LooqBaIaGigv/9k="
+    },
+    {
+      "name": "Uctronics Arducam Pico4ML",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "micro",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [],
+      "smd": false,
+      "notes": "No castellated edges, Camera, 0.96\" LCD",
+      "image": "https://cdn.tindiemedia.com/images/resize/sLH0REjSZPsyZRYLJM-690yKA20=/p/full-fit-in/2336x1752/i/292462/products/2021-03-22T00%3A43%3A32.477Z-b0302%20Arducam%20Pico4ML%20TinyML%20Dev%20Board%20for%20Raspberry%20Pi%20%282%29.jpg",
+      "url": "https://www.tindie.com/products/uctronics/rp2040-dev-board-for-tinyml-arducam-pico4ml/",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,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"
+    },
+    {
+      "name": "VCC-GND Studio YD-RP2040",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "4 MB",
+      "ram": "264 KB",
+      "usb": "type-c",
+      "dimensions": "23x53",
+      "connectivity": [],
+      "connectors": [],
+      "smd": false,
+      "notes": "No castellated edges",
+      "image": "https://www.elecrow.com/media/catalog/product/cache/1917af0aa5ac872287906ce8b861b1aa/r/p/rpb16242m-yd-rp2040-01.jpg",
+      "url": "https://www.elecrow.com/rp-2040-core-board-4mb-compatible-with-raspberry-pi-pico-micropython.html",
+      "flash_bytes": 4194304,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gODAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EAB0AAQABBAMBAAAAAAAAAAAAAAAFAQYHCAIDBAn/xAAwEAABAwMCBQIFAwUAAAAAAAABAgMRAAQFBiEHEhMxQSJhFBUyUVIWcXIzQmKh8P/EABkBAAIDAQAAAAAAAAAAAAAAAAADAQIFBP/EACoRAAEDAgQEBgMAAAAAAAAAAAEAAgMEESExUWESE3GhBSJBQrHhMjPw/9oADAMBAAIRAxEAPwDculKUISlKEgCSYoQlK4JdbK+mFp54kJnePvFc6gOByQlKUqUJShMAmCfYVD5DKhLnw1uhT9wezSPH8j4rlq6yGkZzJnWHcnQDMnYYq7I3SGzQpK4uWmUFS1pSB3JMAVEG+vMivkx7cNzvcLGw/iPP/fvURqHI4vB2qcjqzIJTzT0LRsFSnD+KEDdZ/wBffasA8UuO11kXzisUtuxsFEo6Dbu7o+zjie8/i3tuZUras3hrfEPyvDHp7z1OTB0u7cJ144svMe338LLWteJGmtGh9NrcN5XLolK3FLPSaX+KlJBlX+CJPYHlkVM8I9fsar0N+ob+/wAaG0OOJcdbX0+QJMHqIV9CgTBEkdt94rQ7L6qazWoTZiyebeQAhtsunkaUDIMpGwiSYHLuQNjIufSnDrKZm+a+WZLIJ+ZOJcesrVCpuAkmFKEgfcSdhJ9WxA06alhpY+XC3hH9idTucUlz3PN3Yr6EIUlaAtJlJEg1WrT4cWucwunbfH6oyrV1dlQSyknmW2iAAhS9uoZnePaTEm7Kc2RjiWtNyM9uqqQQlWVxZzGa0xpl/L6dw6Lt2Sbp5KOdTCAn+oGxBXvA77dyCARV6KJAJAn2rD+p7biHgONNrqLT6rjNafzJZtMliHXfTbhI5Q+ySYTy7lQ8yZG6aHMa4gkYjJAJWF7ljO64TlMu/d27N3jEtP3lvlb1JVfNqgpTCSIaVCgCClBPoA5kyMQ5XTd3ldSOm0Z+HLhU45bNlQDCe/KCv6AJAJUdu81thxg4Mu3t4zldIM9LmeJetmUoDrBV3UwVkJCFGCtB22kDwZbQ/C7DaaYZvNSFGTyJIWLfmLqOfwpZVu8vf6lQkSeVKZilT1EVNGZJXBrR6lWa0vNmrEvCTghdZXkyd2hq2tSBN862T1EDsG0q+vz6lAJ9lbitidNYfFYG3XY6XsU864+IvHfUtw/dSjufYdh4HipdNrd5AhV3LLH9rCTuR7mpZi3baQEIQlKR2SBsKyuOr8R/XeKLXJ7ug9o3Pm0AzTrMizxPb7+F4LHGJbc6zqi88e7i/H7CpQCBEzSlalJRw0kfLhbYfJ1JzJ3OKS97nm7kqgABJAG9VpXSqJXQqzYN0bnpp6xEFUeK76UuSJkluNoNjcX9Dr1UhxGSokADaq0pTFCUpShC/9k="
+    },
+    {
+      "name": "Waveshare ESP32-S2-LCD-0.96",
+      "chip": "ESP32-S2",
+      "cores": "Xtensa LX7",
+      "flash": "4 MB",
+      "ram": "320 KB",
+      "usb": "type-c",
+      "dimensions": "21x54",
+      "connectivity": [
+        "WiFi"
+      ],
+      "connectors": [
+        "LiPo-MX1.25"
+      ],
+      "smd": false,
+      "notes": "8 MB of PSRAM, 0.96\" LCD",
+      "image": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/e/s/esp32-s2-lcd-0.96-1_2.jpg",
+      "url": "https://www.waveshare.com/esp32-s2.htm?sku=20658",
+      "flash_bytes": 4194304,
+      "ram_bytes": 327680,
+      "thumbnail": null
+    },
+    {
+      "name": "Waveshare ESP32-S2 Pico",
+      "chip": "ESP32-S2",
+      "cores": "Xtensa LX7",
+      "flash": "4 MB",
+      "ram": "320 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [
+        "WiFi"
+      ],
+      "connectors": [],
+      "smd": true,
+      "notes": "8 MB of PSRAM",
+      "image": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/e/s/esp32-s2-pico-1_2.jpg",
+      "url": "https://www.waveshare.com/esp32-s2.htm?sku=20624",
+      "flash_bytes": 4194304,
+      "ram_bytes": 327680,
+      "thumbnail": null
+    },
+    {
+      "name": "Waveshare ESP32-S3 Pico",
+      "chip": "ESP32-S3",
+      "cores": "2x Xtensa LX7",
+      "flash": "16 MB",
       "ram": "512 KB",
       "usb": "type-c",
+      "dimensions": "21x51",
       "connectivity": [
-        "wifi",
-        "ble"
+        "WiFi",
+        "BLE"
+      ],
+      "connectors": [],
+      "smd": true,
+      "notes": "2 MB of PSRAM",
+      "image": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/e/s/esp32-s3-pico-1.jpg",
+      "url": "https://www.waveshare.com/esp32-s3-pico.htm",
+      "flash_bytes": 16777216,
+      "ram_bytes": 524288,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gOTAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EABoAAQACAwEAAAAAAAAAAAAAAAAEBwIGCAP/xAAsEAABAwMEAQIFBQEAAAAAAAABAgMEAAURBhIhMQciURMjMkFhFBVCcYFS/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAMEAgX/xAAiEQABAwMEAwEAAAAAAAAAAAAAAQIRAxIhMUFR8HGB0cH/2gAMAwEAAhEDEQA/AOy6UpQClKUApSo024QYSkJlzGGCsgJDjgTnJwO/yQP9oCTSsUrQpSkpWklPYB6rKgFKVg862y0p11aUISCVKUcAAUBnXjMlR4bBelPIabHalHFV/rXynabOw4i3Lbkvg7UqUcIUfZOM7iQeMZ/qqo1t5FgStJIdukNy63R9ZS6pLy0Nxh/HHWAcAFJAyUngcV1Y+2+Fjk5vbdbOSytXeT30xXVaatsiSy3nfLLfpGOwkEjcewR2KoiTr3VF4uLl1gw3ZDkZ74qi6gKBQkgFs5BShePuMn7GoDd9Q3olD9qZfiONuqCV7Spg8+tSCvg7cjIBOM9VOtwvk+xwYka8R5EiZkuSGGyHEDtOffnI3HaTnGT9rNaiJKd+E1cqrClt2XzPpNbkJH6pcOfJJK2XW1BMZO7HzDjk8/SnP91dsd1t9lDzLiHW1jKVoOQoe4Nc/wCj/Gsq+xWf3FhiUwhaXUvvsJCN4JJUMAKUSoHIBAB96vPTtpYstrbgR1qWlBJKlADJP4AAH+VnxsWzuYaouMm1WOTPiwnJjjKSr4aBkge+ByQPuBzXM9x8pXLVWp22bo4qBaklWGUq+tfOwZxhJBPeOR3xxXVdVF5h8emVapUm1trXblqVJmW9hpJWHQD85nr1HopJ5BOPvnRQdSSb2yq6Z0/J4klUa9VS10Jvj5mPBzjr+c0jUy3o5mhLaWxHkR87FYGSrOMHn/nFT9KsR77bpK7je20sJBQGHEqMiWF5BQgjKsjOeuMn81tul4N7nw4kG2QBFQ3GDJakFTi3VklQLe3+Ksk7iAAeCeKtLxx4ct9mS3Lnp2O8K2pPzlEEEFax9J+pKko9JB7rRVqMpOVLrl4298ep1IU2OqImITunUNTjw9Ya3aj2j9OmDbYexpcJpsJUQEjJUTlDIIVuCRncOM1aekfHdrtLDSp7bEx9CNuxLeGvz6TyvoH1ZwesVt8GJFgxG4kNhthhtIShtCcAAV715+psTApSlAKUpQESDbLfBccciQ2GVuElakIAJyScZ9sknHXNS6UoBSlKAUpSgP/Z"
+    },
+    {
+      "name": "Waveshare RP2040-LCD-0.96",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "LiPo-MX1.25"
+      ],
+      "smd": false,
+      "notes": "0.96\" LCD",
+      "image": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/r/p/rp2040-lcd-0.96-1_6.jpg",
+      "url": "https://www.waveshare.com/rp2040-lcd-0.96.htm",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gOTAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EABsAAQACAgMAAAAAAAAAAAAAAAAGCAMFAQQH/8QALBAAAQMDAwQBAwQDAAAAAAAAAQIDBAAFEQYhMQcSQWEiEyNxMlFS8AhC0f/EABcBAQEBAQAAAAAAAAAAAAAAAAAEAgP/xAAjEQABBAEEAQUAAAAAAAAAAAAAAQIDEiERMUHwIiNRcYHR/9oADAMBAAIRAxEAPwC5dKUoBSlKAUrhakoSVLUEpHJJwKdw7gnIyeBQHNKUoBSlKAV07xc4VpgrmTn0tNIBO/J/H925O1a3WmqrTpS0uz7nIbQENlYSpYTkDkk+BwM+xVJetnWG8a7nuxIr7ka0g9oSnKS8Adsj/VPnG55ycbDSN1MqvBYm76pb6h2q4P2rVFugRoSyW4xd+64lP6lHfbbhW45wcHNa7RvUGZHt8VrUdumIjJZWqJPhMLUl5tAJCQg7oOxGSSNtzVSbJcJxktxmm1SVH4oAOFgecK8D87VZ3Q6tba005b9NXRf140ZYP1y32rKRwgn+IGPlgEg8HFUo1JG1fhqL35X2J3axus3Ll79Ie76J1ZadTwA5b3XPqIGFtuj5DHvz+akVaPR+moWnYAZjoSXSkBawkDPoeq3lTPrZa7FDLVS24qGdRdfW3SsdTAcS9cFjDbKdyCf05A5J8DbOMZFTOozfNGWu4X6Ffm0lm4Q3S6gg/bWSCD3J4zvnI3yBzWoqW9TYzLevhuU+/wAgY3UW5y1XS9MLXaioLShhRUEkDZSwQCcZIB3AG2a8it0KRcJSY8VvvWrfPhI/cnwKu71ju9xtNiiw5NslT5iZKQ0443lDiO0lfySMEgYSOFHGahHTfpjH1BfHbtFtxtkF5wOuIJ7gPecYJO5A3A3B/eqkj1jSZ2EXj8J0l0kWJuVTuSM9FuksidIbUWwpJwXnlZHHg/xHrng4NWw01YoNht6IkNsDAwpeN1f8HobVnslqhWeA3CgMpaaQMbDc/n+7V3amklV+OChkaNzyKUpXI6ClKUBhmxI02MuNLYbfZWMKQsZBpDix4cdLEVlDTaeEpGN/J9n3WalAKUpQClKUB//Z"
+    },
+    {
+      "name": "Waveshare RP2350-CAN",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "4 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "CAN"
+      ],
+      "smd": false,
+      "notes": "Not full-size",
+      "image": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/r/p/rp2350-can-1.jpg",
+      "url": "https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-pico-3/rp2350-can.htm",
+      "flash_bytes": 4194304,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gOTAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EABsAAQACAwEBAAAAAAAAAAAAAAAGBwIFCAME/8QAKxAAAQMEAgEDBAEFAAAAAAAAAQIDEQAEBSEGEgcTMUEiMlFxYRQVI3KR/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAfEQADAAEFAAMAAAAAAAAAAAAAAQIRAxIhIjEEccH/2gAMAwEAAhEDEQA/AOy6UpQClKUApXncvNW7Dj77iW2m0la1KMBIAkmoliPJPFsplrjG2l08p5oqCD6Kil4p9wgjSjBBj5BB/MATGlYtOJcQFpnY9j7isqAUpSgFarkvIMZx+y/qsi+EAmG20x3cVBPVIJEmAf8AlRjyX5LwvEbRxtVw25exAR2ACSQCB/sQT11BIgkVQfkvkGeZYTlcxbpubm7R/jdRcBxttJPYDW240oDcEmIFamdxG8E25bz2y5Hh8q5llX7SGFFu1sLFwhwK1DsxJUCCoSE9QTOqrXj3MM/w7M2mWxV2rM2NvZli5sPW69QuSFhIAhQP599zszUIw+UvE3F43Z2yDk71r0m3GypAH1A7Sn9QD8fzVlcWexlg3kG8dx2yyWfuQmzJCJbSFD6kkkwJj3EKUYTqJqtKZbSyiJt0k/SxuHedcPm/JH9kft7/ABlqGurXrNBKnXCBJWk/UlInUb+TqrySoKSFJIIIkEfNUz4n8O2mMaayGfZQ6/0SEtFOykElIUTsJB6qSjRSZk7Iq5kgJSEpAAGgBXPjPHhr7C1JQhS1GEpEk/gVWXLuaXGTD1jx+7Ns02oh19CCp10CT1bIUAO2oVJ9zr4qzqrHyJ45cevTyPiJRaZMFJuLaIaukBXZQI+FGT+N/g+/PWVuevpx11bjp6c787wzV/ZjJ3bWQQpns48hSkC4t+8kNuNz1b7EaIhMb+a2B5bxPGW1lgGLJ5labZLd0bh8uN9iJSkk/wAHZGif1XxeReZ395lbDBXNncNOPBsPY/r3WlcEqERsg7kj2A1Uz4N4pe5ZkbTIZa0aDNsEnv27JghJjsPv0rsgiQCCFfFb0rtxuvj9MfGqrWKI7xThF5k80WeOsPNsvp7KcQOqlJUCYSo/aiEnqsj3+md10f478fYridm31Sh+7SCPUiEomJ6A7ElIJmdzEVIOO4LH4KxFtYspTO3FwOy1fJMaEmTAgSTArZ1uqd43HoSU+ClKVCilKUBFs9wHjWZ5A1nbqwQm/SkJW82Oq3AkyglQ2FJPsoQYkTBipLa27Fqwli2ZbZaR9qG0hKR+gK9KUApSlAKUpQH/2Q=="
+    },
+    {
+      "name": "Waveshare RP2350-ETH",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "4 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x46",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "RJ45"
+      ],
+      "smd": false,
+      "notes": "0.96\" LCD",
+      "image": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/r/p/rp2350-eth-1.jpg",
+      "url": "https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-pico-3/rp2350-eth.htm",
+      "flash_bytes": 4194304,
+      "ram_bytes": 532480,
+      "thumbnail": null
+    },
+    {
+      "name": "Waveshare RP2350-LCD-0.96",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "4 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "LiPo-MX1.25"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/r/p/rp2350-lcd-0.96-1.jpg",
+      "url": "https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-pico-3/rp2350-lcd-0.96.htm",
+      "flash_bytes": 4194304,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gOTAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EABwAAQABBQEBAAAAAAAAAAAAAAAIAgUGBwkBA//EACwQAAIBAwMDAgQHAAAAAAAAAAECAwAEEQUGIQcSMUFREyIyQhQjYXGRobH/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAgMB/8QAJREAAgIABAUFAAAAAAAAAAAAAAECESExYXEDEkHR8TKBkeHw/9oADAMBAAIRAxEAPwCZdKUoBSmaUApSlAKUpQCrRrWrQ2kptpJfguI2lGTguqjJ7ffHrjmrvUfetvTrc97ql7r0V4dRhdGxBOpkiVShXBUH5cKW8e4ABJJqoxjJ1KVakyk4q0rMe0fqNrG8Os+pDY2rd2j2YLzXl5cH8O6qB3uihQwUMAv3Z5wQO41sLYXXXbmr6jJouqXlql9Ce0y2790cuPuXjJBwOQPLAAVHLqHdnTtL0TQtnbTXSZ7K2db6d8JdSykMrIrKQJF4yQBgZCgDkVp8O8UncrusqtkuCVYMP7GKucXgq6fPfcmDWLv2OpVtPDcwrNbyxzRtnDowYHBweR+tfSuffTLrZuvZlyiPdS3tnkBkZvmwMcc8HgYGfGSfJqWXTXrbtHd8UcRvI7a6OAe7KqW/Y8r4Y4OcAZJ5rJprM0NpUqmN0kjWSN1dGAZWU5BB8EGqqAUpSgMM3p052/uSFy9tFBOwx3rGCP4PgjLYI8FicZqM3VDohqthMWFs85dsJcRHk+OO4/V5IAbnCkkipmVRPDFcQvDPGksbgqyOMhgfQikXKPp+v2xxpPM5ga9od/pMkgmj+JEhwZUBwPbI8j/PYmr70l2XrO8Nz2tjpjyQPK3aJFYqO0ctk+2AeKmh1H6N6NuBJbnTEW2umySmcKx5JGfTJ7Qc5wowMVpza+yt6bG33b2Oh6eXVoXtI0b8pWEnBfIzh/lMndzgKufQVvwnGbeNPpeTe/gz4nNFZWtO3kzbpxe700ffFptvS9atdy6RIsjPdRK3w4yjlZA7H1DH6x9WFAxziQVYz0+2pBtfTHV5Bc6jcsJLy67QDI3sB6KPQD3J8k1k1ZSlzY0r0LiqwsUpSpKFKUoBXhVSwYqCw8HHIr2lAKUpQH//2Q=="
+    },
+    {
+      "name": "Waveshare RP2350-Plus-16MB",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "16 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "LiPo-MX1.25"
       ],
       "smd": true,
-      "image": "https://www.waveshare.com/img/devkit/ESP32-C6-Pico/ESP32-C6-Pico-details-1.jpg",
-      "url": "https://www.waveshare.com/esp32-c6-pico.htm",
-      "flash_bytes": 4194304,
-      "ram_bytes": 524288,
       "notes": "",
-      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAuAEADASIAAhEBAxEB/8QAGgABAQADAQEAAAAAAAAAAAAAAAgEBgcFAf/EADEQAAECBgEDAQUIAwAAAAAAAAECAwAEBQYRIRIHEzFBFBUiMlEIFyNCQ1JhYnGB0f/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/EABoRAQEAAwEBAAAAAAAAAAAAAAABAhEhMUH/2gAMAwEAAhEDEQA/AK+hCJv+011aq6Kn929jBwT01hqdn2lAEctFlpWdH9y/TwN5IkoCmVyj1OcmZOn1KVmpiWOHm2nAop/79NZ3qPQiWenfTyUt6kMNGrTLNVQe6Z1h5SO2sj5WhocQCQc7Vk+MxuFsdc5elV1y3LvmG54MrS0mqyjeApRAwlxA1y8aTvKhgYBMG9HW/HdoRi0uoyFVkW56mzjE5KuDKHWVhSVf7EZUIIQhEn2OQdU+idLuMLqFDUJKfBUsNKWQ0tRyTgjaCT/kY5YwTmOvQguMplsRXdc7f1nyL1vVVM2EaSH1tcnW29AqT6K0RjZGVgDkQRGl1ep0xDLcrTZNfulafxZhwhwqczsKzsDOcgkEnedbva4qFSbgp6pGrybcy0c8SdLbOCOSFDaTvyInfqP0Lq1EnfftlPl1DLnd7PAFScaAWgaWgDHjwlB+ElRMZ3cfWtTLxp1mVKqWBbs1WqfcMzT6s3NBs0B8dxKkevLkQrY4qH9QlOQDHdemnW237mcRTawg0Sr6BZfOELJOBhX85AHoTnGQMxLlzVGt1y7TUa4pmVqyR2WnHwQyWhgkciSpKgFAkEjGcZCiY9JuhFM6m3UU/wBrW6x3RMurWDIJUQe7zSdZKgnifKVbHgw4zc2LzlXOkhSQpJBSRkEHII+ohE9dLqnfNDuKSoEhUEVulzJ01Mj45cJ+Y6xhO8BSdDCRxGcxQsMosIQhCCEIRJpHUTplbl5MuLfYTJz6tiaabBJIyQVp8KwSSD5zg7xE23J0ov2zLhZVbzrzTrrvGUW0+osuZ/T5HPw7xwUMqPJRzgRZMIxcfs41Mvlal00tNVt0hL1RVLv1uZbR7a8y3wQFAfI2n8qAcnHqSTG2whG2X//Z"
+      "image": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/r/p/rp2350-plus-1_4.jpg",
+      "url": "https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-pico-3/rp2350-plus.htm?sku=29761",
+      "flash_bytes": 16777216,
+      "ram_bytes": 532480,
+      "thumbnail": null
+    },
+    {
+      "name": "Waveshare RP2350-Plus-4MB",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "4 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [
+        "LiPo-MX1.25"
+      ],
+      "smd": true,
+      "notes": "",
+      "image": "https://www.waveshare.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/r/p/rp2350-plus-1_3.jpg",
+      "url": "https://www.waveshare.com/product/raspberry-pi/boards-kits/raspberry-pi-pico-3/rp2350-plus.htm?sku=29370",
+      "flash_bytes": 4194304,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gOTAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EABsAAQACAwEBAAAAAAAAAAAAAAAEBgMHCAEF/8QAKBAAAgEEAgEEAgIDAAAAAAAAAQIDAAQFEQYhEgcTMUEiURRxQmGh/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAIDBAUB/8QAJhEAAwAABAUEAwAAAAAAAAAAAAECAxExURITYdHwISJBkXGBsf/aAAwDAQACEQMRAD8A7LpSlAKUpQClYru5t7S3a4upo4Yk15O7aA2dDv8AvqvLW7tbqGOe2uIpopBtHjcMGH+iKAzUpSgFKUoBULN5Www2Olv8jcLDBGOyfljr4A+yfoDs1E5byPF8YxMmRylwkSKCVUntyOzofJ0OzregCa5pynqmnJ+TyXmews17hTbzrjLM6ME0qgnxl77XoDvokKxA+KsjCvETcrQjVzOWb1IHqx6yvyPkNrYSW8sPHWbajwcpd9/BK9lG72RvY1+I0TU7069Zsnw+GTAcr4w0lqnvXFjdYe2RUdCC4T2l0q97/PZHZJ18VTOD2/IeSW/IOQz4HFWNrjwVEt1IEiibWxGivvZVCD5D61+xUT094Fd8rz0cOMuL+e0eSGUN7hWESLssADvyj0y/kSpA7UNrVW1y6h/Er7z69fERXGq9NX59HWPpD6k4bn2JaSzW7tb2BmS4tbqIo6MD3r9j/tXyqzwHh2P4pjlihVZLtl1JMR3re/Efob7OtbO2I2as1ZUWsVWee8zxXEbESXcscl3LoQW3uBWkJOh/QJ68iNbIB1urNVD9TvTPE81ms7+SRrfI2VxHPEzD3IZSjA+EkZ6KkDRI0dH7+KnCl0lTyRGm0vQ0DzbMch5ha5TMCzXKJa6jkDePsx9keEaE7cjeyfyCkkKdHdaax38+fIpBYziGRlcS3E5VViUrold/BA+x2NV0n6z5KTG2sVhnbaZc1E3uY+9MfsRyxbYvEZE2HCqgJUAMSV0Ng71z6TemOU51m1yuViQQuwmYNGPBFPw7KRrRHarohwGBINdHCtcnm03ErRfL79Xp/TLafM4F7nvt2/Bi9OOCZzmV4+Mtb7JS8endJZo5pmVbxk6Mrj/Bd9aHe/DakGuueF8WxvFsUlnYxqX8QskvgFLa+gB0qgkkKOhs6qTxfAY7juMSxx8IQADzc9tIQNAkns6HQ38AAfVfVrn4uLWLXFX6W3d7s1TKhZLzzYUpSoHopSlAQs1isfmbB7HJ2kV1buQSki70R8MP0R9EdimFxVhh7FbLHWyW8IYsVUfLE7LH9knuptKAUpSgFKUoD//Z"
+    },
+    {
+      "name": "WeAct RP2350A-V20-16MB",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "16 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [],
+      "smd": true,
+      "notes": "",
+      "image": "https://ae-pic-a1.aliexpress-media.com/kf/S48a803334bf3442cacfe7304d169d6ebI.png",
+      "url": "https://aliexpress.com/item/1005008117237405.html",
+      "flash_bytes": 16777216,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,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"
+    },
+    {
+      "name": "WeAct RP2350A-V20-4MB",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "4 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x51",
+      "connectivity": [],
+      "connectors": [],
+      "smd": true,
+      "notes": "",
+      "image": "https://ae-pic-a1.aliexpress-media.com/kf/S9229b38f366b477d8f9e655c4e5dd1b75.png",
+      "url": "https://aliexpress.com/item/1005008117237405.html",
+      "flash_bytes": 4194304,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAHQAAAgEFAQEAAAAAAAAAAAAAAAgGAQIDBAUHCf/EADoQAAIABQEFAwsBCAMAAAAAAAECAAMEBRESBgchMWETkdEIFBYiQVFSVFVxk2IVIyUyQkaBoZLB8f/EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBQf/xAAmEQACAQIEBgMBAAAAAAAAAAAAAQIRkQMEEhMUIUFRUlNhktHh/9oADAMBAAIRAxEAPwDVo/KF24rLJbq+TvN2Jk1FTIMyooqmzOk2mcI5ZDhiG4phcHJ1LwGcRsUm/beLNlW2fN3l7AJKrZCu4ShVplPM7Kc7I6mYMYeUssMTxM1CBgw4HmFD8lTfhXwg8wofkqb8K+EOgqijWjfjt7crNQ10vensDTzqqmkzWpqq3CU8l2EztJbgzMgqyAA49YOD6vKM9w31bd0tin1sve1u8qqyUrutNKoBpmhVLBUJmZLHGACFGc9CWx8wofkqb8K+EHmFD8lTfhXwgoFTgbor9X7Tbr9mtoLoZTVtxtsmpnmUmlC7Lk4HsESrV0ixFVECIoVQMAAYAisOgF2rpBq6RbBBRAERjarb/ZPZe5y7be7slLVzJYmrK7NmJUkgHgOh7jEnhQ99G+O2PtBtZsZUWNpFzn1SURnTMOssJjGSHxyOQQOGcENiFKVBxVT3uZvl3dywvaX7RqTWA1O4On38uXA9xjWTfpuvdtI2mlZ5Y7JvCEkt3m57SrrLhUSyZc1pMhmCqVXBwo4Fg5BUYOMjpHBoqkt26TqSZImBlaU2pSp4nI6ZBi4xbIboP0d+e7Af3Ih9x7F8Hn06f7EZTvq3cCWsw371GPqt5u+DxPLh0hChPE2oCiVMLucAhQFz0JPKJSpttK8pqa7VD9na5UuolVcuWoluszUVRgx1KGOQeBPHOAIJQaXIFI+hFrrqS50EmuoJ6VFPOQOjocggjI+3A8o2IWryMkuz7IXma1FWNQNdTOpKgqQk4kYmaSRlsFRk+/2wysSmUEL3t1uEud62uut4prhbJkuuqHqB21EpcFhnSTq4kEYz+oe7gwkETPDU+o4y0izjydL2rB0utqluFZFZKJcoDr5et+vP+B1i6Z5ON0mTWd7laMsSSf2ch4kt724/z+34B7zDLQRnsLyd2VufCsLSPJwuLP69xtAViNX8NThxUn+rq3/HrwpS+ThcUEtXuNqVQUJAt6HGOyz7ekwdcH4hhl4IewvJ3YbnwrEU3U7JtsXsZS2OZVLUzEZpjsssIoZsZAA9n/eYlcEEaxWlUIbq6njvpTtD9Wn9y+EHpRtD9Wn9y+EcfS3wt3QaW+Fu6PD3J92fUeDyvrjZFJG8u6zgxl3CvYJLMxsKnADPh38OcZpu8O7y3aW1xr9QcpjQoywx6o64IP2jkXOTMRBLprXKno4y4MsEZXGkY4dSPtjhmNISrjMSarWOkllpMwqdIY6/YCOXEgH/AMjTXJ9Xc43lcKPLRH6r8JPT7f3Wopqmok3ipaXTnEw6V5YBzy5cf9GLV3g3dp0uWLnW/vNJVtCYIY4B+3EdeIOMRGme7ADTYUPJcKdIK59oz7ieBzjrmNq1009qqc9XbaeTp0GWUlDiwyCc8+Wn7coWuS6u445fBk0lhx+v8Jb6U7Q/Vp/cvhB6U7Q/Vp/cvhHH0t8Ld0GlvhbuiNyfdnXweV9cbI//2Q=="
+    },
+    {
+      "name": "WIZnet Surf 5",
+      "chip": "W7500",
+      "cores": "ARM Cortex-M0",
+      "flash": "128 KB",
+      "ram": "32 KB",
+      "usb": "micro",
+      "dimensions": "21x75",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "RJ45"
+      ],
+      "smd": false,
+      "notes": "Optional PoE support",
+      "image": "https://www.wiznet.hk/629-thickbox_default/surf-5.jpg",
+      "url": "https://docs.wiznet.io/Product/Open-Source-Hardware/surf5",
+      "flash_bytes": 131072,
+      "ram_bytes": 32768,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gOTAK/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgAQABAAwEiAAIRAQMRAf/EAB0AAQACAgMBAQAAAAAAAAAAAAAHCAIFAwQGAQn/xAAvEAABAwMDAgQGAQUAAAAAAAABAgMEAAURBhIhMUEHEyJhCBQyUXGBUhWRkrHx/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAEDAgT/xAAkEQACAQQBAwUBAAAAAAAAAAAAAQIDESExEgRR8DJBYcHR4f/aAAwDAQACEQMRAD8AuXSsHnW2Wy46tKEDqongV9bcQ4gLbWlaT0KTkUBlSlKAUpSgFKUoCOPE25OSprdoes9xfgJWCZMdWEhz3KVBadueo461r7XIft7SERpMobON6nVKWfyT1/dYeJT0bReqkapuD7aYE5zyloZS6HBhHKlpSShaRgcqTkZHPaueBftJ32B85AuEZ1vGStlXI++R7d6zaIqkb8b5NxojV8ydeZFou7sELYaSsvJVsypa8IQAo8nHU/c4Fe7r8zXrrcbtrS6PPSnlPKuSnluDkIShZCVe/I4x3IxU/aL8e9S2fbCuDyL0gEhPzGQ6c9PXwcdOTnjP6vLismFTqVCai1h+/mfotpSov0p436PvLpjTVP2iUk4UiQnKQc4+ofnv9j2Gaka33GBcIyZMGYxJZVjC2nAoc/jvVUk9G0ZKWmdqlKV0dHBNiRZsdUeZHZkMq+pt1AUk/o1Ges/AzRl+bLkFEixyxkodhr9KSTk+k9j3AIzUp0pYyqUadT1Iqpffh7vdnWuVZ4dvlKAw6uK4tC5TfAIWhWSFcqOUqUCT9NR/qbTb1ovEhQs0u1pUMrafHmhKgCcbsA4ylXJHROeRir111LlbYFyZ8mfDYlN9g6gKx/f8Vk6dtM4n00ZK17eedigM1ieich9nymobqkIW9vBwcclRBylXXp7Cuq5qSRGukNi3OzHX48kS397xGVpVuaVsH8QScd1K61b3WPgbpW9J8yF5kF5B3NpyVoCsDHfI+kdz1V3Oah7U3gLqGyTZ0+FE/qfzCNodbWVKBG7YcDn+ORgdTzgZqPG0cuFSm1wV/n+flze6J+IC4l/5aWtie2hI9MzDL6lc+kKT6SfTj3K+OBUy+HviRYdZyHIcBEpiaygrdYdb+kA4JyPfH26iqewrO/Zihh+IUIW+hySjlO8DaSlO/gAhWeemR0zVvfCWCw9bRqZu2ogC4sNhhoN7FeSnOwqHbgj/AH3qxld40WFWU58dW7781nJ7qlKVqekUpSgFKUoDVXvTljvSSLnbI0g4xvUjC/8AIc/8FbJhpthlDLKEtttpCUJSMBIAwAKzpUsgf//Z"
+    },
+    {
+      "name": "WIZnet W5100S-EVB-Pico",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "micro",
+      "dimensions": "21x75",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "RJ45"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://docs.wiznet.io/assets/images/w5100s-evb-pico-1.1-side-adf5e1b613524c4256126b1bb4bd58a0.png",
+      "url": "https://docs.wiznet.io/Product/iEthernet/W5100S/w5100s-evb-pico",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAArAEADASIAAhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAUHCAYDBP/EAC0QAAEDAwMDAgYCAwAAAAAAAAECAwQABREGEiEHEzFBYRQiMlGBoSNCcXKS/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAkEQACAgEEAAcBAAAAAAAAAAAAAQIRAxIhMUETFFFhkaHB8P/aAAwDAQACEQMRAD8A2XXi1KjOurabfaW4g4UgKBIPuKj9X3dFj05Mualso7SPlU8vYgKJwNysHAyRzVKWhvapyYGCy88olZbld1JOc7gQcDPsBTSsDQNKqGza3VaNS2u2XXUDLUeatWRMcACEJQfCjzkqwMk481bUd5mQyl5h1DrahlK0KCkkexFDVE6o3pvc9KUpSKFKUoAjtSWiPfbNItcp19pp8AFbC9i04OQQfxWXr3B1ho2TJRc9MXFNvYUvszo6kr3I3HaVbAAFY844rWVCAadmWWE5VolX2YD1NeJerNWszIrziRCiYQ48sNncCTxnyrnx6mpPTWu9SWS8xGrbOnN90DuCOrtpWo/VxgpJAHJx5BrX2o+nOitQPfEXLT0JUnOQ+0jtOZ+5UnGfzmq81J0AgOgrsF3cjKB3BqSneCf9hz6n0qHzwcPl86bnOpP2bX98kRp3rncIsJb93XBmoZwFodHw8g5+xTlCvHnCef13+k+sujL8naqS/bnkpypMlv5Rzj605GPc4qhtddH9XwImxu1lbKQSt2GO4FY9SPP6FV6q03i3QHY8YrjTI7oeUtZLRWOOEj1OcDH+aLXTJx5s+PbJ1zt163+G+YE6HPYEiDLYlMnwtlwLSfyK+isa9HpU66XZcWXqF60Phj+NbSuy8XcgBCQAMgcehwBWwrY06zbozT7q3nUNJStxf1KUAMk+5NPfs7sObxbdbH0UpSmbilKUAKib7pqwXxsou1piSs/2W2N3/Q5/dS1KOQas4Gz9KdN2jU8e9wO8gMqK/h17VoK8cHJGRg8+a76lKSVERxxhelVZ/9k="
+    },
+    {
+      "name": "WIZnet W5100S-EVB-Pico2",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "2 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x80",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "RJ45"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://docs.wiznet.io/assets/images/w5100s-evb-pico2-docs-277754aec922eb3d0b84962e01de98fa.png",
+      "url": "https://docs.wiznet.io/Product/iEthernet/W5100S/w5100s-evb-pico2",
+      "flash_bytes": 2097152,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAsAEADASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAUGCAcB/8QALRAAAQMEAQIFAwQDAAAAAAAAAQIDBAAFBhEhBxIIEzFRcTJBYRQiI0JiorH/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQMC/8QAIhEAAgIBAgcBAAAAAAAAAAAAAAECEQMhMRJBQlFhgbHw/9oADAMBAAIRAxEAPwDZdKj8kurFjsU27SQotRWVOFKUlSlEDgAAEkk6GgK450+6uZLf3ZhkwrZ+njaBdbWs7Wee3tUhBHH3rqMXLYjdHc6VW8SyV29SnYzsINKbaDhcQraTzrXP3qyVGmtyilKVAKUpQFf6h2qXecQnW+BxKcSC0fMKNKBB+oA6+dH4rOWG36JFbnWu+ZPGbnQ5DiVpdkocHanQ33AJBAOxsgVq2qxfenuE3xLgueM217zQQ4QyEKVv3KdE11GbRnkU+mvZkXKcqvUPqHNex7KJrcYRGtuwXh2LJTsAa2ONHfyKl7Z19zy0Px40m6Nz0rJAQ/GQtZ5AHI7T67rtkvw9YEFd9nFysy0r70CNI7kpV76WD/2qjffDZIcWp22ZMw8sq79zIpSre977kk87/FLXNGKhlu39PGfEhIgMtLvFlhPlf9Yzym1J0dHuB7gPf1q64z13xe7sPOPW+5wgy35i1KQhxJH+JSravgDdcPv/AIfM+jha24ce4dp2FRJgT/qrRNV694plFtaS1dsVu0NpJ2V+QtYHvpSR+B6Gj4TpPLFa6/vBr5jqNhTkgRnchhxHyAfLlKLJAPp9ehVlhS4s6MmTCksyWF/S4y4FpV8EcGsH4TfhjV7Zl3W2LvLYKkJjJA0ng/yFK/YbGvzW28FiNwsUt7bUFEEONecY6UhPlFf7ynQ42N8/ndRpdzSE3Im6UpUNBSlKAUpSgIy6Y9Ybps3Ky2+Yd729GQs7+SKkxxwKUoD/2Q=="
+    },
+    {
+      "name": "WIZnet W5500-EVB-Pico",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "micro",
+      "dimensions": "21x75",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "RJ45"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://docs.wiznet.io/assets/images/w5500_evb_pico_side-da676c5d9c41adedc0469b9f1810b81b.png",
+      "url": "https://docs.wiznet.io/Product/iEthernet/W5500/w5500-evb-pico",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAArAEADASIAAhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAYHCAQBA//EAC4QAAEDAwIEBQIHAAAAAAAAAAECAwQABQYRIQcSMVETFCJBoRWRMkJDYYGCsf/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgQD/8QAHxEAAgMAAgIDAAAAAAAAAAAAAAECAxEhMRPRIkGh/9oADAMBAAIRAxEAPwDZdKVVOb5BkT2ShmyA+VQsNB0NpcbG/qUVIdStPvsUqGwqN4VLS1qVXjeXzrf4ZmSI62VuoaBfIRupQA9W3erCQpK0hSVApO4IOoNSMlJag1jw9pSlaIKUpQCsxcWMcyHEuILl6tNovE+1yG1OPSYyAEocWrXfk7adVD361p2lDM1Jr4vGYV4iZy9kkK32yPPfX4MpS323EAEBI03Om4J23/evtjHEDL8dlRY9nucplpY1WVJHhKVud0kcp0GnTStg5Ng2I5ISq9Y/AlOn9YtBLo/unRXzUFyTgTj05lSbVNkW86lSUqAcSD8H/ayo59HHOq6UnKWN5xmojOPcc73ChBzKLdCWEtocO5jurSropKTqFD7VP8T4yYTkA5ETXoLwGqkSWiAN9PxDUe4ql824EZY1FKISW56Ejdcdz1q7DRW/8VWNzxfILJDVFLD9vmx3AseKFIU92A02Gh700xXZfDif77Xo3lBmw57Afgy2JTR6LZcC0/cV0Vk7gMz9avIjz7vco9wQ4jyyGHFoWvQlS+cp2KdPY9+wrWNVadlVvkWroUpSqeopSlAK558GFPZLM6IxJbP5HWwsfNdFKAj9kwzHLLeHLra7emNIW2W1ci1cuh9+UnQGpBSlEsIkl0f/2Q=="
+    },
+    {
+      "name": "WIZnet W5500-EVB-Pico2",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "2 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x80",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "RJ45"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://docs.wiznet.io/assets/images/w5500-evb-pico2-docs-d5b9eeb6d6e55b16be63850cbab2c222.png",
+      "url": "https://docs.wiznet.io/Product/iEthernet/W5500/w5500-evb-pico2",
+      "flash_bytes": 2097152,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAbAEADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABggABAcD/8QALhAAAQMDAwIEBAcAAAAAAAAAAQIDBAAFEQYSIQdRCBMxQRQVImEjMkJSkaGx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEDAv/EAB0RAQADAAIDAQAAAAAAAAAAAAEAAhEDMQQhQZH/2gAMAwEAAhEDEQA/AHIkOtsMOPuq2ttpKlHsAMmsK0/1W1ddtWToyIcdi2NlbiS9FebdQjOEJIWgJJ74Ue4rb7rG+MtkqJgHzmVt8+nIIpXIk1nR+rrtp3UN5WHUKSpotl51scEqGVpOMAj9Sh7ZqlM+yd71rmuTfdI6rmXe6CDIisj8JSy42SMYxjg9+f4ovpFtf6jj3LWkCfpvUMh+K1DPmyIbxRtUVqARxjB9+eat2brD1BskqNEZ1BMlJWQkIkbXUgEgDlST6+vr96TXX1JnkV3D3HeqUsDPiMv9rYZ+Z26BOcWTvbCFtOIAPqojI5HIwmjnTHX+y3Nhxy4WWXACEBYKX0OeZn9gO0k/bFZRJQ5avU2apQTH6q6Fcf8Ah3743De4+mShSByMj6sFJ4Pei63TYdxhNToEpmVFeTubeZWFIWO4I4NKbEZYqlc7RarmgouVthzEkYw+wlf+irtSiCb3M7vHRXptcdyhpxqE4o7iuE4pnnvgHb/VCF78N9gkJV8r1BcofO5KXkJeAPt6bTW51KJg4qHVT8iq6l8N2qXVrfYuttui1HIU64ttft3yPbvQte+mHUCA0G52kpLrCDlZiYfHHbBNOnUp6weKj8iJaLmXrR9+ZDlicmyHz5AakDyPLycDAUPzHgYHengscT4C0RYe1CS00EqCBgA++PtnNWJEdh/Z5zLbu1QUnekKwR6EZrrQq9x0oUMJ/9k="
+    },
+    {
+      "name": "WIZnet W55RP20-EVB-Pico",
+      "chip": "W55RP20",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "micro",
+      "dimensions": "21x80",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "RJ45"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://docs.wiznet.io/assets/images/w55rp20-evb-pico-docs-8e041fe8924bed1c8d567c1c8b87628d.png",
+      "url": "https://docs.wiznet.io/Product/ioNIC/W55RP20/w55rp20-evb-pico",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAwAEADASIAAhEBAxEB/8QAGwABAAMAAwEAAAAAAAAAAAAAAAUGCAMEBwn/xAAtEAABAwMDAwIFBQEAAAAAAAABAgMFAAQRBhIhBzFBCBMUMlFxkRUjgaGx4f/EABgBAQEBAQEAAAAAAAAAAAAAAAABAwIE/8QAHxEAAgICAQUAAAAAAAAAAAAAAAECEQMxEgQhIkFR/9oADAMBAAIRAxEAPwDZdKVS7nqfo621M/p16TCZBl32lNbeSoDJAHc457DwaqTYLpSo+Mm4mSWEWV+y6sjIQFYV+DzUhUApSlAKUpQHDelwWbxaOHA2rYcdjjissaUbD2o5EO214i7tknchy6eUgb1ckNugFJJHgY54NatrzrXHSKB1RPOTy5Sbj5FaUp32t2Q2ABgDYeP+13CVGeRySuKs8W1F1LkNCa7iWrOLYvFLYcWpL6yjIORkEdu3keausN6lYFbCFzkHc2KivYr2LhDwB+uDtOKhdQ+myZuLn4pjWpl3kNFplUo2pK205JxvQTnk+RVE1H6d+oVuhYYZtL5oE4+FfGcfZeDRuL2eflm5XXb4aLh+tHTqRaDn6+3aZ8XTamwPurlP91cIrUEFLIC4yZj70Ht7Fyhf+GsLo0XqfSP70vpaRLqPkC7QlpXf5jyPocc5xXSEndRUc63ZPBokI3tuI27yk5STkZwMc4qNL0zp9Q4PzVH0IzSsWdNdcyj0rcIk9a30W6+oIYZYuihtxzsQhKgR9P57VsqLbfajLVq5dW6+hlCXHF43KUEjJOOMk1HFrZriyrIuS0dmlKVDUUpSgBANQ8vpbTcskiSgo663dy5bpJ/OM1MUoCgI6PaCYnLSYs4g2dzaupdSGXTsWUnICknIxkA8Y7Cr/SlCJJaP/9k="
+    },
+    {
+      "name": "WIZnet W6100-EVB-Pico",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "micro",
+      "dimensions": "21x75",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "RJ45"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://docs.wiznet.io/assets/images/w6100-evb-pico-side-e4b400a89b30dd784efd14919392490b.png",
+      "url": "https://docs.wiznet.io/Product/iEthernet/W6100/w6100-evb-pico",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAoAEADASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAYIAwQHBQL/xAAsEAABAwMDAwMEAgMAAAAAAAABAgMEAAURBiExBxITQVGBFCIykWJxQmGh/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDAf/EACMRAAIBAwQBBQAAAAAAAAAAAAABAgMRMRIhQWHwBFFxkbH/2gAMAwEAAhEDEQA/ALkPuoYYW86rtQ2kqUfYCotp/Xtmu6FFKZMdaMeRt5lSVt5zgKSQCDt7Vpdb74bDon6jySmkvym2FORQguJByrYLBB3SAR6gmoBY9TQZkVoO3LLytyXmSxnPH25IB+axsZI7jEmRZaO6M+26P4q3/VZ6rLqvqBbtGdSbEtEUSnnEqelpTILaVI7FJQSd05H3Hj23rrml+rej70lCHZirZIUMhuXgAjbcLSSkjfnI4rNS5JOpFT0c+c4J9SsUWRHlMh6M+0+0rhbawpJ+RWWmHFKUoA0b9aLbfLY7brrBizYznLUhoOIz6HB9qrRf+jfU/TSXXNPzbfqSGgEtxlJDLoGeACQP6GTVpaUE509W6bXwULbsGoJerJszVVmuFnfZY8bDDjJBWrORzjKeNx6D1otq7t3GO2y24yEBKEuKIUnA5Uon0596vdMiRZjPhlxmZDZ/wdQFD9GoZqLpZpW7NkNR3bevfBjLwnf+JyP1ipuLWCC9PJNybTb915+FadP6skWZl56IuYxKbT9rkNzwJJzv3p4Jxjge3xNNGdedRsFTd7+hnsNjd1xPhXxsCobbkeo969jWvQ27PREot0xmehv8UrPiXz7cf9rld30Nf7CXItyiyobCh3B1SCtRVnccYI4A3P8Ae9Le2dhYwq0832+rd9lkbB1g0zPS2m5Ny7Q4sZy+jvbPPC059jyB6H1qe2y4QbpCRMt0tiXHc/F1lYUk/IqkmhWWYF/juahgzH4wClOtxWi6HQUkJ7gnhOMZO/6q42gLS3ZNJwre3FEUJCnPCAB2d6irBx6jOKeLfJalUc2+j3qUpTlxSlKAFfDzTTzSmnm0ONqGClSQQfg0pQBGpmgNKSbjGnm0ttPR3kvI8RKElQORlI25/wBVKKUrEksBbe5//9k="
+    },
+    {
+      "name": "WIZnet W6100-EVB-Pico2",
+      "chip": "RP2350",
+      "cores": "2x ARM Cortex-M33 + 2x RV32 Hazard3",
+      "flash": "2 MB",
+      "ram": "520 KB",
+      "usb": "type-c",
+      "dimensions": "21x80",
+      "connectivity": [
+        "Ethernet"
+      ],
+      "connectors": [
+        "RJ45"
+      ],
+      "smd": false,
+      "notes": "",
+      "image": "https://docs.wiznet.io/assets/images/w6100-evb-pico2-docs-0d662aa52a0089de8d06d14d756c1e12.png",
+      "url": "https://docs.wiznet.io/Product/iEthernet/W6100/w6100-evb-pico2",
+      "flash_bytes": 2097152,
+      "ram_bytes": 532480,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAwAEADASIAAhEBAxEB/8QAHAABAAICAwEAAAAAAAAAAAAAAAYIBQcBAgME/8QALBAAAQMDAwIFAwUAAAAAAAAAAQIDBAAFEQYSIQcxCBNBUWEicZEUQqHh8f/EABcBAQEBAQAAAAAAAAAAAAAAAAADAQL/xAAeEQEBAAICAgMAAAAAAAAAAAABAAIRAxIiMUFCkf/aAAwDAQACEQMRAD8AuXSujzrbLK3nlpbbQkqWpRwEgckk1qyw9aYF2vEiAzYbiEN7lJkEDy1IBwk7gSPqHIrQX1La1Kwdg1Rb7xK/SsIfbe8subVpGMAgHkH5FZyiakpSlZJSlKSxOso70rStzjxwourjLCAkAknHbBIBz2wSKrn0/iLhyrrGkWmBa56HUpdQmIIzjgIJBIBIPPso9/mrRVrzVHRrQuoLtKu8iBIjXCUVF6TGfKVqKhgnnIzj+q7xz60+Tv8AUtDax6g6v0f1CZi2WbEjIXADi0OMh1OCo4PIzkkY49qzVr8S18hhpN6s9tkoUcFxtS2VHABJx9Q9fYVIJnhltzC1O2XVU5Csjame0JHAzhO7IO3k8fNRTUvh11YXlSIqrPPVuKkhtws7fXASoYH5oou2iHMu9a/LY0PxC6aSw29drTPhIcJShTaku7iO/B2q4+1S2wdWtB3pLhi3sNqaRvcS+w43sT7kkYA+c1VPUvSfqFG8xc7TtzVgk7o6A+k57k7c/P8AFYl1Mq2NIhuNz7aRhKy4hTRA9c/HB7j1rl6/DdGfKHkV7bfebRcCBBucOSSMgNPpUcfYHNffVDNL32Cxf2pesUv3CJuLaA2C6tRGQkkjCikAk/5V0unENiFou3NxmnWWXG/ObQ6pRUlKyVAHcSc4Pb07UTVTDPvSGlKVlSUpSkmK8JcOJMbLUuMzIQe6XWwsfg170pKI3XpnoO5LLknS9uCz+5lvyj+UYqWoSlCAhAASkYAHoK5pSX//2Q=="
+    },
+    {
+      "name": "WIZnet WizFi360-EVB-Pico",
+      "chip": "RP2040",
+      "cores": "2x ARM Cortex-M0+",
+      "flash": "2 MB",
+      "ram": "264 KB",
+      "usb": "micro",
+      "dimensions": "21x75",
+      "connectivity": [
+        "WiFi"
+      ],
+      "connectors": [],
+      "smd": true,
+      "notes": "",
+      "image": "https://docs.wiznet.io/assets/images/WizFi360-EVB-Pico_Main-9b7c937889c2fa7b853d254b13df5ae1.png",
+      "url": "https://docs.wiznet.io/Product/Open-Source-Hardware/wizfi360-evb-pico",
+      "flash_bytes": 2097152,
+      "ram_bytes": 270336,
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAgAEADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAABQcIAAYD/8QALBAAAQMCBQMDAwUAAAAAAAAAAQIDEQQFAAYSITEHE0EiMlFhcYEIFBVCU//EABgBAQADAQAAAAAAAAAAAAAAAAEAAwQC/8QAJREAAQQBAgUFAAAAAAAAAAAAAQACAxExBFESExRxwWGBkeHw/9oADAMBAAIRAxEAPwB6fqLzurLeXkWqhqVs11YCt1berWzTp9yhHkmBE/P3xy/TLMOenMnW29VOZtCqxS+zTXSkL7SkpJg9xJDiQQDuSeDtxgJ1uyB1AvGZK66VFA3cre65DSqdRWqnZBkDQNzA+g384GUWf7etCbPfrAJYbDCf2TxZdbSBABYc9JIiBH08HBYGVQDFMdiO4Pi05mepVZbWFO5my663TNp1LuFqqE1lOBO6lDZaB+DGOxsGZLFfqdD9oulNVpUkK0oXCwCEndJ3BhSdiNpGJrz9nO2VWUaWz5eUpRWB3UPI7RkD0oIVAInc+DpjyRhb2J5+2NmrHfbcKe5IcWgzPo3G4MjVPwkcyMBdss8+q6Z4YbPhXljYlSh6vXTLLjTNHmSovFMlhCg1WsSAqAC3rPqEQN99ifJnDByj1/tNxLLN3tFVSuunShTA7oUfgDmfoJ3IG+5xLrKvGpjwTX74TqxsBbPmrL12X2qK60y3v8lK0L5I9p3PtVx8HBrCCDhaFsB8yZWy7mRgs32y0NwTEAvMgqH2VyPwcGMbCgtDhRCT1/6AZUqm3P4qpraBSiYC3VOpSN/SCTqCd1GJIkyZwrs2dDc5251btv03CnEBKWllRHEDwryBweCSeBissbHNbLNNooJm8LmqALzlu9UVUTWIWw8okkOIJHAMq8gmRsRtI+ceYbqW7botyVqqw8UKLDkKESFFPHBB32O2L2utotl1b7dxoKaqSOO62FEbg7HkbgH8Y4K+dG8tVau7a3Ki1u+C2dQAgJIB9w2BHP8AYnfEt3dcHSEAAOusWpasd6vrNC2y+8Fo0qbUmqbCl6dCkplXuEBSo3PIw9OlSOoNXRW27UF+cRaHqkNrYqx3VqRJ1rngblRHEwkcDAHMXQ6/0Ti6ijQzcFKEKdZgLPt5Bg8k/MBPmcd/0Csd7paR9681NxDFNDNLS1TSUds+5WmBOiNEA7g6sFglVCOTmgPuvTHv9r//2Q=="
     }
   ]
 }

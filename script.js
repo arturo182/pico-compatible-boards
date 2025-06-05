@@ -28,17 +28,16 @@ $(document).ready(function()
         columns: [
             {
                 data: 'thumbnail',
-                responsivePriority: 1,
-                render: (data, type, row) => {
-                    return `<img src="${data}" alt="${row.name}" class="board-image-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="${row.image}" data-img-title="${row.name}">`;
-                },
-                className: 'image-col',
+                responsivePriority: 2,
+                render: (data, type, row) => `<img src="${data}" alt="${row.name}" class="board-image-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="${row.image}" data-img-title="${row.name}">`,
+                className: 'dt-center image-column',
+                width: '50px',
                 orderable: false,
                 searchable: false
             },
             {
                 data: 'name',
-                responsivePriority: 2,
+                responsivePriority: 1,
                 render: (data, type, row) => row.url ? `<a href="${row.url}" target="_blank">${data}</a>` : data
             },
             {
@@ -46,29 +45,49 @@ $(document).ready(function()
                 responsivePriority: 3
             },
             {
-                data: 'flash',
+                data: 'cores',
                 responsivePriority: 4,
+                align: 'center'
+            },
+            {
+                data: 'flash',
+                type: 'num',
+                responsivePriority: 5,
+                render: (data, type, row) => type === 'sort' ? row.flash_bytes : data,
                 searchable: false
             },
             {
                 data: 'ram',
-                responsivePriority: 5,
+                type: 'num',
+                responsivePriority: 6,
+                render: (data, type, row) => type === 'sort' ? row.ram_bytes : data,
                 searchable: false
             },
             {
                 data: 'usb',
-                responsivePriority: 6,
+                responsivePriority: 7,
                 searchable: false
             },
             {
+                data: 'dimensions',
+                responsivePriority: 8
+            },
+            {
                 data: 'connectivity',
-                responsivePriority: 7,
+                responsivePriority: 9,
+                render: (data) => data && data.length > 0 ? [...data].sort().join(', ') : '-',
+                searchable: false
+            },
+            {
+                data: 'connectors',
+                responsivePriority: 10,
                 render: (data) => data && data.length > 0 ? [...data].sort().join(', ') : '-',
                 searchable: false
             },
             {
                 data: 'smd',
-                responsivePriority: 8,
+                responsivePriority: 11,
+                className: 'smd-column',
                 render: (data) => data ? 'Yes' : 'No',
                 searchable: false
             },
@@ -79,12 +98,10 @@ $(document).ready(function()
                 orderable: false
             }
         ],
-        columnDefs: [
-            { targets: 3, render: (data, type, row) => type === 'sort' ? row.flash_bytes : data, type: 'num' },
-            { targets: 4, render: (data, type, row) => type === 'sort' ? row.ram_bytes : data, type: 'num' }
-        ],
         order: [[ 1, 'asc' ]],
         searching: true,
+        autoWidth: false,
+        fixedHeader: true,
     });
 
     table.on('responsive-resize', function (e, datatable, columns) {
@@ -100,24 +117,36 @@ $(document).ready(function()
     function populateFilters(data)
     {
         const filters = {
-            chip:         { el: $('#chipFilterGroup'),         label: 'Chip',           options: new Set(),     selected: [] },
-            usb:          { el: $('#usbFilterGroup'),          label: 'USB Type',       options: new Set(),     selected: [] },
-            connectivity: { el: $('#connectivityFilterGroup'), label: 'Connectivity',   options: new Set(),     selected: [] },
-            smd:          { el: $('#smdFilterGroup'),          label: 'SMD Mountable',  options: ['Yes', 'No'], selected: [] }
+            chip:         { el: $('#chipFilterGroup'),         label: 'Chip',            options: new Set(),     selected: [] },
+            cores:        { el: $('#coresFilterGroup'),        label: 'Cores',           options: new Set(),     selected: [] },
+            usb:          { el: $('#usbFilterGroup'),          label: 'USB Type',        options: new Set(),     selected: [] },
+            dimensions:   { el: $('#dimensionsFilterGroup'),   label: 'Dimensions (mm)', options: new Set(),     selected: [] },
+            connectivity: { el: $('#connectivityFilterGroup'), label: 'Connectivity',    options: new Set(),     selected: [] },
+            connectors:   { el: $('#connectorsFilterGroup'),   label: 'Connectors',    options: new Set(),     selected: [] },
+            smd:          { el: $('#smdFilterGroup'),          label: 'SMD Mountable',   options: ['Yes', 'No'], selected: [] }
         };
 
         data.forEach(board => {
             if(board.chip)
                 filters.chip.options.add(board.chip);
 
+            if(board.cores)
+                filters.cores.options.add(board.cores);
+
             if(board.usb)
                 filters.usb.options.add(board.usb);
 
+            if(board.dimensions)
+                filters.dimensions.options.add(board.dimensions);
+
             if(board.connectivity)
                 board.connectivity.forEach(conn => filters.connectivity.options.add(conn));
+
+            if(board.connectors)
+                board.connectors.forEach(conn => filters.connectors.options.add(conn));
         });
 
-        ['chip', 'usb', 'connectivity', 'smd'].forEach(key => {
+        ['chip', 'cores', 'usb', 'dimensions', 'connectivity', 'connectors', 'smd'].forEach(key => {
             const filter = filters[key];
 
             let html = `
@@ -125,7 +154,9 @@ $(document).ready(function()
                 <div class="filter-options">
             `;
 
-            let sortedOptions = (key === 'smd') ? filter.options : Array.from(filter.options).sort();
+            let sortedOptions = Array.from(filter.options).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+            if (key === 'smd')
+                sortedOptions = filter.options;
 
             sortedOptions.forEach(option => {
                 if (!option && option !== false)
@@ -175,7 +206,7 @@ $(document).ready(function()
         const row = table.row(dataIndex).data();
         let matched = true;
 
-        ['chip', 'usb', 'connectivity', 'smd'].forEach(key => {
+        ['chip', 'cores', 'usb', 'dimensions', 'connectivity', 'connectors', 'smd'].forEach(key => {
             if (!matched)
                 return;
 
@@ -186,7 +217,11 @@ $(document).ready(function()
 
             if (selectedOptions.length > 0) {
                 if (key === 'connectivity') {
-                    if (!row.connectivity || !selectedOptions.some(opt => row.connectivity.includes(opt))) {
+                    if (!row.connectivity || selectedOptions.some(opt => !row.connectivity.includes(opt))) {
+                        matched = false;
+                    }
+                } else if (key === 'connectors') {
+                    if (!row.connectors || selectedOptions.some(opt => !row.connectors.includes(opt))) {
                         matched = false;
                     }
                 } else if (key === 'smd') {
