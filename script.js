@@ -269,9 +269,9 @@ $(document).ready(function()
         modalTitle.textContent = imgTitle;
 
         const modalImageDisplay = imageModalElement.querySelector('#modalImageDisplay');
-        modalImageDisplay.src = '';
-        modalImageDisplay.alt = 'Loading...';
-        modalImageDisplay.style.display = 'none';
+        modalImageDisplay.src = imgSrc;
+        modalImageDisplay.alt = imgTitle;
+        modalImageDisplay.style.display = 'block';
 
         const modalBody = imageModalElement.querySelector('.modal-body');
         let loadingSpinner = modalBody.querySelector('.loading-spinner');
@@ -283,19 +283,9 @@ $(document).ready(function()
         }
         loadingSpinner.style.display = 'block';
 
-        const fullImg = new Image();
-        fullImg.onload = function() {
-            modalImageDisplay.src = imgSrc;
-            modalImageDisplay.alt = imgTitle;
-            modalImageDisplay.style.display = 'block';
+        modalImageDisplay.onload = () => {
             loadingSpinner.style.display = 'none';
         };
-        fullImg.onerror = function() {
-            modalImageDisplay.alt = 'Failed to load image!';
-            modalImageDisplay.style.display = 'block';
-            loadingSpinner.style.display = 'none';
-        };
-        fullImg.src = imgSrc;
     });
 
     imageModalElement.addEventListener('hidden.bs.modal', () =>
