@@ -20,17 +20,19 @@ $(document).ready(function()
             const pageInfo = api.page.info();
 
             if (pageInfo.pages <= 1) {
-                $('.dataTables_paginate').hide();
+                $('.dt-paging').hide();
             } else {
-                $('.dataTables_paginate').show();
+                $('.dt-paging').show();
             }
         },
         columns: [
             {
-                data: 'image',
+                data: 'thumbnail',
                 responsivePriority: 1,
-                render: (data, type, row) => data ? `<img src="${data}" alt="${row.name}" class="board-image-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="${data}" data-img-title="${row.name}">` : '-',
-                className: 'image-col dt-control',
+                render: (data, type, row) => {
+                    return `<img src="${data}" alt="${row.name}" class="board-image-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="${row.image}" data-img-title="${row.name}">`;
+                },
+                className: 'image-col',
                 orderable: false,
                 searchable: false
             },
@@ -83,6 +85,16 @@ $(document).ready(function()
         ],
         order: [[ 1, 'asc' ]],
         searching: true,
+    });
+
+    table.on('responsive-resize', function (e, datatable, columns) {
+        const anyHidden = columns.includes(false);
+        const firstCol = table.column(0).nodes().to$();
+        if (anyHidden) {
+            firstCol.addClass('control');
+        } else {
+            firstCol.removeClass('control');
+        }
     });
 
     function populateFilters(data)
@@ -179,8 +191,6 @@ $(document).ready(function()
                     }
                 } else if (key === 'smd') {
                     const strValue = row.smd ? 'Yes' : 'No';
-                    console.log(selectedOptions.length);
-                    console.log(strValue);
                     if (selectedOptions.length === 1 && !selectedOptions.includes(strValue)) {
                         matched = false;
                     }
@@ -217,17 +227,53 @@ $(document).ready(function()
     imageModalElement.addEventListener('show.bs.modal', (event) =>
     {
         const triggerElement = event.relatedTarget;
+        const imgSrc = triggerElement.getAttribute('data-img-src');
+        const imgTitle = triggerElement.getAttribute('data-img-title') || 'Board Image';
 
         const modalTitle = imageModalElement.querySelector('.modal-title');
-        modalTitle.textContent = triggerElement.getAttribute('data-img-title') || 'Board Image';
+        modalTitle.textContent = imgTitle;
 
         const modalImageDisplay = imageModalElement.querySelector('#modalImageDisplay');
-        modalImageDisplay.src = triggerElement.getAttribute('data-img-src');
+        modalImageDisplay.src = '';
+        modalImageDisplay.alt = 'Loading...';
+        modalImageDisplay.style.display = 'none';
+
+        const modalBody = imageModalElement.querySelector('.modal-body');
+        let loadingSpinner = modalBody.querySelector('.loading-spinner');
+        if (!loadingSpinner) {
+            loadingSpinner = document.createElement('div');
+            loadingSpinner.className = 'loading-spinner text-center';
+            loadingSpinner.innerHTML = '<div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>';
+            modalBody.appendChild(loadingSpinner);
+        }
+        loadingSpinner.style.display = 'block';
+
+        const fullImg = new Image();
+        fullImg.onload = function() {
+            modalImageDisplay.src = imgSrc;
+            modalImageDisplay.alt = imgTitle;
+            modalImageDisplay.style.display = 'block';
+            loadingSpinner.style.display = 'none';
+        };
+        fullImg.onerror = function() {
+            modalImageDisplay.alt = 'Failed to load image!';
+            modalImageDisplay.style.display = 'block';
+            loadingSpinner.style.display = 'none';
+        };
+        fullImg.src = imgSrc;
     });
 
     imageModalElement.addEventListener('hidden.bs.modal', () =>
     {
-        imageModalElement.querySelector('#modalImageDisplay').src = '';
+        const modalImageDisplay = imageModalElement.querySelector('#modalImageDisplay');
+        const loadingSpinner = imageModalElement.querySelector('.loading-spinner');
+
+        modalImageDisplay.src = '';
+        modalImageDisplay.style.display = 'none';
+        if (loadingSpinner) {
+            loadingSpinner.style.display = 'none';
+        }
+
         imageModalElement.querySelector('.modal-title').textContent = 'Board Image';
     });
 });
