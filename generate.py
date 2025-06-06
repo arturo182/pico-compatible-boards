@@ -1,6 +1,5 @@
 import yaml
 import json
-import os
 import re
 import sys
 import shutil
@@ -10,13 +9,14 @@ import time
 import requests
 import jsonschema
 import hashlib
+import pathlib
 from PIL import Image
 
 
-BOARDS_DIR = 'boards'
-TEMPLATE_DIR = 'page_template'
-OUTPUT_DIR = 'out'
-CACHE_DIR = 'cache'
+BOARDS_DIR = pathlib.Path('boards')
+TEMPLATE_DIR =  pathlib.Path('page_template')
+OUTPUT_DIR =  pathlib.Path('out')
+CACHE_DIR = pathlib.Path('cache')
 
 BOARD_SCHEMA = {
     'type': 'object',
@@ -73,10 +73,10 @@ def generate_thumbnail(image_url, max_size=(64, 64), quality=85):
     if not image_url:
         return None
 
-    cache_file = os.path.join(CACHE_DIR, hashlib.sha256(image_url.encode('utf-8')).hexdigest())
+    cache_file = CACHE_DIR / hashlib.sha256(image_url.encode('utf-8')).hexdigest()
 
     try:
-        if not os.path.exists(cache_file):
+        if not cache_file.exists():
             print('\tFetching image... ', end='\r')
 
             req = requests.get(image_url, stream=True, timeout=10)
@@ -123,10 +123,8 @@ def generate_thumbnail(image_url, max_size=(64, 64), quality=85):
         return None
 
 
-def validate(filename, BOARDS_DIR):
-    print(f'Validating "{filename}"...')
-
-    filepath = os.path.join(BOARDS_DIR, filename)
+def validate(filepath):
+    print(f'Validating "{filepath.name}"...')
 
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -147,10 +145,8 @@ def validate(filename, BOARDS_DIR):
         return False
 
 
-def parse(filename, BOARDS_DIR):
-    print(f'Processing "{filename}"...')
-
-    filepath = os.path.join(BOARDS_DIR, filename)
+def parse(filepath):
+    print(f'Processing "{filepath.name}"...')
 
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -190,47 +186,40 @@ def parse(filename, BOARDS_DIR):
 
 
 def main():
-    if not os.path.exists(BOARDS_DIR):
+    if not BOARDS_DIR.exists():
         sys.exit(f'Error: Directory "{BOARDS_DIR}" not found!')
 
-    if not os.path.exists(TEMPLATE_DIR):
+    if not TEMPLATE_DIR.exists():
         sys.exit(f'Error: Directory "{TEMPLATE_DIR}" not found!')
 
-    if os.path.exists(OUTPUT_DIR):
+    if OUTPUT_DIR.exists():
         shutil.rmtree(OUTPUT_DIR)
 
-    if not os.path.exists(CACHE_DIR):
-        os.makedirs(CACHE_DIR, exist_ok=True)
+    if not CACHE_DIR.exists():
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    files = [filename for filename in os.listdir(BOARDS_DIR) if filename.endswith('.yaml') and not filename == '_template.yaml']
+    files = [filepath for filepath in BOARDS_DIR.glob("*.yaml") if not filepath.stem == '_template']
     files.sort()
 
-    valid = [validate(filename, BOARDS_DIR) for filename in files]
+    valid = [validate(filepath) for filepath in files]
 
     if False in valid:
         sys.exit('\nErrors found during validation. Aborting!')
 
-    all_data = [parse(filename, BOARDS_DIR) for filename in files]
+    all_data = [parse(filepath) for filepath in files]
 
     if False in all_data:
         sys.exit('\nErrors found during processing. Aborting!')
 
-    json_path = os.path.join(OUTPUT_DIR, 'board_data.json')
+    json_path = OUTPUT_DIR / 'board_data.json'
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump({'data': all_data}, f, indent=2)
 
     print(f'Successfully wrote {len(all_data)} boards to "{json_path}"!')
 
-    for item in os.listdir(TEMPLATE_DIR):
-        src = os.path.join(TEMPLATE_DIR, item)
-        dest = os.path.join(OUTPUT_DIR, item)
-
-        if os.path.isdir(src):
-            shutil.copytree(src, dest, dirs_exist_ok=True)
-        else:
-            shutil.copy2(src, dest)
+    shutil.copytree(TEMPLATE_DIR, OUTPUT_DIR, dirs_exist_ok=True)
 
 
 if __name__ == '__main__':
