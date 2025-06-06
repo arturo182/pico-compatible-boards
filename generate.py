@@ -2,12 +2,13 @@ import yaml
 import json
 import os
 import re
+import sys
 import shutil
 import base64
 import io
 import time
 import requests
-from jsonschema import validate, ValidationError
+import jsonschema
 from PIL import Image
 
 
@@ -108,82 +109,104 @@ def generate_thumbnail(image_url, max_size=(64, 64), quality=85):
         return None
 
 
+def validate(filename, boards_dir):
+    print(f'Validating "{filename}"...')
+
+    filepath = os.path.join(boards_dir, filename)
+
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            jsonschema.validate(instance=yaml.safe_load(f), schema=BOARD_SCHEMA)
+
+        return True
+
+    except yaml.YAMLError as e:
+        print(f'\tError parsing YAML: {e}')
+        return False
+
+    except jsonschema.ValidationError as e:
+        print(f'\tError validating schema: {e.message}:')
+        return False
+
+    except jsonschema.SchemaError as e:
+        print(f'\tError in schema: {e.message}:')
+        return False
+
+
+def parse(filename, boards_dir):
+    print(f'Processing "{filename}"...')
+
+    filepath = os.path.join(boards_dir, filename)
+
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            board_data = yaml.safe_load(f)
+
+        board_data['flash_bytes'] = parse_memory_size(board_data.get('flash'))
+        board_data['ram_bytes'] = parse_memory_size(board_data.get('ram'))
+
+        board_data.setdefault('connectivity', [])
+        board_data.setdefault('connectors', [])
+        board_data.setdefault('notes', '')
+        board_data.setdefault('thumbnail', None)
+
+        if board_data.get('image'):
+            board_data['thumbnail'] = None
+            for _ in range(3):
+                board_data['thumbnail'] = generate_thumbnail(board_data['image'])
+                if board_data['thumbnail']:
+                    break
+
+                time.sleep(5)
+
+            if board_data['thumbnail'] is None:
+                return False
+
+        return board_data
+
+    except yaml.YAMLError as e:
+        print(f'\tError parsing YAML: {e}')
+        return False
+    except ValueError as e:
+        print(f'\tValue error: {e}')
+        return False
+    except Exception as e:
+        print(f'\tUnexpected error: {e}')
+        return False
+
+
 def main():
     boards_dir = 'boards'
     template_dir = 'page_template'
     output_dir = 'out'
 
     if not os.path.exists(boards_dir):
-        print(f'Error: Directory "{boards_dir}" not found!')
-        exit(1)
+        sys.exit(f'Error: Directory "{boards_dir}" not found!')
 
     if not os.path.exists(template_dir):
-        print(f'Error: Directory "{template_dir}" not found!')
-        exit(1)
+        sys.exit(f'Error: Directory "{template_dir}" not found!')
 
     if os.path.exists(output_dir):
         shutil.rmtree(output_dir)
 
     os.makedirs(output_dir, exist_ok=True)
 
-    all_data = []
-    data_valid = True
-
-    files = os.listdir(boards_dir)
+    files = [filename for filename in os.listdir(boards_dir) if filename.endswith('.yaml') and not filename == '_template.yaml']
     files.sort()
 
-    for filename in files:
-        if not filename.endswith('.yaml') or filename == '_template.yaml':
-            continue
+    valid = [validate(filename, boards_dir) for filename in files]
 
-        print(f'Processing "{filename}"...')
+    if False in valid:
+        sys.exit('\nErrors found during validation. Aborting!')
 
-        filepath = os.path.join(boards_dir, filename)
-        try:
-            with open(filepath, 'r', encoding='utf-8') as f:
-                board_data = yaml.safe_load(f)
+    if len(sys.argv) >= 2 and sys.argv[1] == "--validate-only":
+        print('\nValidation OK!')
+        sys.exit(0)
 
-            validate(instance=board_data, schema=BOARD_SCHEMA)
+    all_data = [parse(filename, boards_dir) for filename in files]
 
-            board_data['flash_bytes'] = parse_memory_size(board_data.get('flash'))
-            board_data['ram_bytes'] = parse_memory_size(board_data.get('ram'))
-
-            board_data.setdefault('connectivity', [])
-            board_data.setdefault('connectors', [])
-            board_data.setdefault('notes', '')
-            board_data.setdefault('thumbnail', None)
-
-            if board_data.get('image'):
-                board_data['thumbnail'] = None
-                for _ in range(3):
-                    board_data['thumbnail'] = generate_thumbnail(board_data['image'])
-                    if board_data['thumbnail']:
-                        break
-
-                    time.sleep(5)
-
-                if board_data['thumbnail'] is None:
-                    data_valid = False
-                    break
-
-            all_data.append(board_data)
-
-        except yaml.YAMLError as e:
-            print(f'\tError parsing YAML: {e}')
-            data_valid = False
-        except ValidationError as e:
-            print(f'\tError validating schema: {e.message}:')
-            data_valid = False
-        except ValueError as e:
-            print(f'\tValue error: {e}')
-            data_valid = False
-        except Exception as e:
-            print(f'\tUnexpected error: {e}')
-            data_valid = False
-
-    if not data_valid:
-        print('\nErrors found during processing. Aborting!')
-        exit(1)
+    if False in all_data:
+        sys.exit('\nErrors found during processing. Aborting!')
 
     json_path = os.path.join(output_dir, 'board_data.json')
     with open(json_path, 'w', encoding='utf-8') as f:
