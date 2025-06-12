@@ -8,6 +8,6 @@ dimensions: "21x51"
 connectivity: []
 connectors: ["CSI", "microSD"]
 smd: true
-notes: ""
+notes: "EOL"
 image: "https://arace.tech/cdn/shop/files/Duo-02_7a68c567-cfd2-495b-a3c1-d04371f7c886.jpg"
 url: "https://milkv.io/duo"
