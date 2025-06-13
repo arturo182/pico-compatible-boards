@@ -1,0 +1,13 @@
+name: "Waveshare ESP32-C6 Pico"
+chip: "ESP32-C6"
+cores: "ESP-RISC-V"
+flash: "4 MB"
+ram: "512 KB"
+usb: "type-c"
+dimensions: "21x57"
+connectivity: ["WiFi", "BLE", "Zigbee", "Thread"]
+connectors: []
+smd: true
+notes: ""
+image: "https://thepihut.com/cdn/shop/files/esp32-c6-mini-microcontroller-development-board-the-pi-hut-wav-26866-42338553987267.jpg"
+url: "https://www.waveshare.com/esp32-c6-pico.htm"
